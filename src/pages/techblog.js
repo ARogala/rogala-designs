@@ -28,7 +28,7 @@ function TechBlog({data}) {
 					<span>{allCategories[i]}:</span>
 					<ul aria-label="submenu" className="dropDown">
 						{groupedPosts[allCategories[i]].map((post) => {
-							console.log(post.node);
+							//console.log(post.node);
 							return (
 								<li key={post.node.id}>
 									<Link to={post.node.fields.slug}>
@@ -57,12 +57,22 @@ function TechBlog({data}) {
 			);
 		}
 	}
-
+	let recentPosts = data.allMarkdownRemark.edges.slice(0,2);
 	return (
 		<Layout>
 			<div>
 				<h1>Web Development Blog</h1>
-				<h2>Total Posts: {data.allMarkdownRemark.totalCount}</h2>
+				<h2>Recent Posts:</h2>
+				{recentPosts.map(({node}) => (
+					<div key={node.id}>
+						<Link to={node.fields.slug}>{node.frontmatter.title}</Link><br/>
+						<span>Category: {node.frontmatter.category}</span><br/>
+						<span>{node.frontmatter.date}</span><br/>
+						<p>{node.excerpt}</p>
+					</div>
+
+				))}
+				<h2>Total Archived Posts: {data.allMarkdownRemark.totalCount}</h2>
 				{dropDownUL}
 				<span>Single Posts:</span>
 				{singlePost}

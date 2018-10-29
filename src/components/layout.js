@@ -10,13 +10,13 @@ function Layout({children}) {
 						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<Link to="/about">About</Link>
-					</li>
-					<li>
 						<Link to="/portfolio">Portfolio</Link>
 					</li>
 					<li>
 						<Link to="/techblog">Tech Blog</Link>
+					</li>
+					<li>
+						<Link to="/about">About Me</Link>
 					</li>
 				</ul>
 			</header>

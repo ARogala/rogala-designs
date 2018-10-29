@@ -1,5 +1,5 @@
 ---
-path: src//techblog/JavaScript/
+path: src/techblog/JavaScript/
 title: JavaScript ES5 Functions
 date: '2018-10-10'
 author: Andrew Rogala

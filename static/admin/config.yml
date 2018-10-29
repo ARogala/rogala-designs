@@ -8,7 +8,7 @@ public_folder: assets
 collections:
   - name: TechBlog
     label: TechBlog
-    folder: /src/techblog/JavaScript/
+    folder: src/techblog/JavaScript
     create: true
     fields:
       - { name: path, label: Path, default: /src/techblog/JavaScript/ }

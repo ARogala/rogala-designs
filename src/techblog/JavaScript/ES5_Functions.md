@@ -1,9 +1,10 @@
 ---
-title: "JavaScript ES5 Functions"
-date: "2018-10-10"
-author: "Andrew Rogala"
-category: "JavaScript"
-subCategory: "Functions"
+path: src//techblog/JavaScript/
+title: JavaScript ES5 Functions
+date: '2018-10-10'
+author: Andrew Rogala
+category: JavaScript
+subCategory: Functions
 ---
 
 JavaScript functions are super awesome!!

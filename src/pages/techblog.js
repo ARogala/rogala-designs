@@ -5,9 +5,9 @@ import groupBy from '../groupBy.js';
 import Layout from '../components/layout';
 
 function TechBlog({data}) {
-
+	console.log(data);
 	data.allMarkdownRemark.edges.map(({node}, index) => {
-		data.allMarkdownRemark.edges[index].category = node.frontmatter.category + ' ' + node.frontmatter.subCategory;
+		return data.allMarkdownRemark.edges[index].category = node.frontmatter.category + ' - ' + node.frontmatter.subCategory;
 	});
 
 	const groupedPosts = groupBy(data.allMarkdownRemark.edges, 'category');

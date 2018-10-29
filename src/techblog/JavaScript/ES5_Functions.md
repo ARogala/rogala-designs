@@ -11,6 +11,8 @@ JavaScript functions are super awesome!!
 
 <code>
 	function Hello() {
-		console.log('hello I am a functon declaration');
+
+		console.log('hello I am a function declaration');
+
 	}
 </code>

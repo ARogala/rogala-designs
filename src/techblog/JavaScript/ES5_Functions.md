@@ -10,9 +10,9 @@ subCategory: Functions
 JavaScript functions are super awesome!!
 
 <code>
-	function Hello() {
+	function Hello() {<br/>
 
 		console.log('hello I am a function declaration');
-
+               
 	}
 </code>

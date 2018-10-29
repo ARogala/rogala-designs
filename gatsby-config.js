@@ -13,6 +13,7 @@ module.exports = {
 		},
 
 		`gatsby-plugin-sass`,
-		`gatsby-transformer-remark`
+		`gatsby-transformer-remark`,
+		`gatsby-plugin-netlify-cms`
 	]
 }

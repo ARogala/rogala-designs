@@ -5,7 +5,8 @@ import groupBy from '../groupBy.js';
 import Layout from '../components/layout';
 
 function TechBlog({data}) {
-	console.log(data);
+	//console.log(data);
+	//add category to edges so nodes(blog posts) can be sorted by category
 	data.allMarkdownRemark.edges.map(({node}, index) => {
 		return data.allMarkdownRemark.edges[index].category = node.frontmatter.category + ' - ' + node.frontmatter.subCategory;
 	});
@@ -83,6 +84,7 @@ function TechBlog({data}) {
 
 export default TechBlog;
 
+//each node has a unique id
 export const query = graphql`
 	query {
 		allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

@@ -2,19 +2,21 @@ backend:
   name: github
   repo: ARogala/rogala-designs
 
-media_folder: static/assets
-public_folder: assets
+media_folder: src/img/uploads
+public_folder: img/uploads
+
+display_url: https://rogala-designs.netlify.com
 
 collections:
-  - name: TechBlog
-    label: TechBlog
+  - name: JavaScript
+    label: JavaScript
     folder: src/techblog/JavaScript
     create: true
     fields:
       - { name: path, label: Path, default: src/techblog/JavaScript/ }
-      - { name: title, label: Title }
+      - { name: title, label: Title, widget: string }
       - { name: date, label: Date, widget: date }
-      - { name: author, label: Author }
-      - { name: category, label: Category}
-      - { name: subCategory, label: SubCategory}
+      - { name: author, label: Author, widget: string }
+      - { name: category, label: Category, widget: string }
+      - { name: subCategory, label: SubCategory, widget: string }
       - { name: body, label: Body, widget: markdown }

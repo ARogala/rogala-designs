@@ -20,3 +20,12 @@ collections:
       - { name: category, label: Category, widget: string }
       - { name: subCategory, label: SubCategory, widget: string }
       - { name: body, label: Body, widget: markdown }
+  - name: About Me
+    label: About Me
+    folder: src/about
+    create: false
+    fields:
+      - { name: path, label: Path, default: src/about/ }
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: date }
+      - { name: author, label: Author, widget: string }

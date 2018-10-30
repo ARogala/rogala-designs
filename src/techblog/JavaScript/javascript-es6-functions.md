@@ -1,6 +1,6 @@
 ---
 path: src/techblog/JavaScript/
-title: JavaScript ES6 Functions
+title: ES6 Functions
 date: 2018-10-29T23:59:13.242Z
 author: Andrew Rogala
 category: JavaScript

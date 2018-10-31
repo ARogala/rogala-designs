@@ -63,7 +63,9 @@ export default ({children}) => (
 						<h2 className="header__title-2">Front-End Web Development</h2>
 					</div>
 				</header>
-				{children}
+				<main role="main">
+					{children}
+				</main>
 				<footer>
 					<h2>Footer</h2>
 				</footer>

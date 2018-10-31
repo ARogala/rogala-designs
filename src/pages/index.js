@@ -6,10 +6,7 @@ function Home({data}) {
 	return (
 		<Layout>
 			<div>
-				<p className="typewriter">Hi, My name is Andrew! I am a Front-End Web developer specializing in
-				React JavaScript and the JAM (JavaScript API's and Markdown) Stack.
-				I love making custom web sites, blogs, and web apps.
-				Check out some of my work below.</p>
+				<p id="typewriter"></p><span className="blink-caret"></span>
 				<h3>Featured Work</h3>
 			</div>
 		</Layout>

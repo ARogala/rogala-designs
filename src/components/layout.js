@@ -3,6 +3,8 @@ import { StaticQuery, Link, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
 import icon from '../img/tabIcon.png';
+import GitHub from '../img/github.png';
+import LinkedIn from '../img/linkedin.png';
 
 import '../styles/main.scss';
 
@@ -31,6 +33,7 @@ export default ({children}) => (
 		`}
 		render={data => (
 			<div>
+
 				<Helmet>
 					<html lang="en" />
 					<meta charSet="utf-8" />
@@ -43,6 +46,7 @@ export default ({children}) => (
 		  			<link rel="shortcut icon" href={icon} />
 		  			<link href="https://fonts.googleapis.com/css?family=Mali:500,700" rel="stylesheet" />
 				</Helmet>
+
 				<header className="header">
 					<nav className="nav">
 						<input type="checkbox" className="nav__checkbox" id="navi-toggle" />
@@ -63,12 +67,19 @@ export default ({children}) => (
 						<h2 className="header__title-2">Front-End Web Development</h2>
 					</div>
 				</header>
+
 				<main className="main" role="main">
 					{children}
 				</main>
-				<footer>
-					<h2>Footer</h2>
+
+				<footer className="footer">
+					<div className="footer__icons">
+						<span>Find me on:</span>
+						<a href="#"><img src={GitHub} alt="Find Me on GitHub"/></a>
+						<a href="#"><img src={LinkedIn} alt="Find Me on LinkedIn"/></a>
+					</div>
 				</footer>
+
 			</div>
 		)}
 	/>

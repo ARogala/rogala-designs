@@ -6,11 +6,11 @@
 
     color: white;
 
-	height: 30vh;
+	height: 250px;
 
     &__title-1 {
     	text-align: center;
-    	padding: 0px 0px 10px 0px;
+    	padding: 10px 0px 10px 0px;
     }
     &__title-2 {
     	text-align: center;
@@ -20,8 +20,11 @@
 
 @media screen and (min-width: 751px) {
 	.header {
-	 	-webkit-clip-path: ellipse(100% 50% at 51% 41%);
-		clip-path: ellipse(100% 50% at 51% 41%);
+	 	-webkit-clip-path: ellipse(100% 50% at 51% 50%);
+		clip-path: ellipse(100% 50% at 51% 40%);
+
+		// -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+		// clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 	}
 }
 

@@ -14,8 +14,8 @@
 		list-style: none;
 
 
-		background: $hero-color1;
-        background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
+		//background: $hero-color1;
+        //background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
 
 	}
 
@@ -146,6 +146,10 @@
 		}
 
 		&__list {
+
+			background: $hero-color1;
+        	background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
+
 			/*center the list items*/
 			display: flex;
 	  		flex-direction: column;

@@ -1,1 +1,42 @@
 @charset "UTF-8";
+
+.header {
+	background: $hero-color1;
+    background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
+
+    color: white;
+
+	height: 30vh;
+
+    &__title-1 {
+    	text-align: center;
+    	padding: 0px 0px 10px 0px;
+    }
+    &__title-2 {
+    	text-align: center;
+    	padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 751px) {
+	.header {
+	 	-webkit-clip-path: ellipse(100% 50% at 51% 41%);
+		clip-path: ellipse(100% 50% at 51% 41%);
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.header {
+		&__titleBox {
+  			transform: translateY(70%);
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.header {
+		&__titleBox {
+  			transform: translateY(50%);
+		}
+	}
+}

@@ -59,7 +59,9 @@ export default ({children}) => (
 					</ul>
 				</nav>
 
-				<header>
+				<header className="header">
+					<h1>Rogala Designs</h1>
+					<h2>Front-End Web Development</h2>
 
 				</header>
 				{children}

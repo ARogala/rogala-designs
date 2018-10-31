@@ -1,6 +1,5 @@
 
 exports.onRouteUpdate = ({location}) => {
-	console.log(location.pathname);
 	if(location.pathname === '/') {
 		const text = [`Hi, My name is Andrew! I am a Front-End Web developer specializing in React JavaScript and the JAM (JavaScript API's and Markdown) Stack. I love making custom web sites, blogs, and web apps. Check out some of my work below!`];
 		const paragraph = document.getElementById('typewriter');

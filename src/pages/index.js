@@ -5,10 +5,11 @@ import Layout from '../components/layout';
 function Home({data}) {
 	return (
 		<Layout>
-			<div>
+			<div className="typewriter-box">
 				<p id="typewriter"></p><span className="blink-caret"></span>
-				<h3>Featured Work</h3>
 			</div>
+			<h3 className="heading-tertiary">Featured Work</h3>
+
 		</Layout>
 	);
 }

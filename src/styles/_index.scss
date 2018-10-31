@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+.typewriter-box {
+	text-align: center;
+	max-width: 750px;
+	margin: auto;
+	padding: 10px;
+}
+
 #typewriter {
 	display: inline;
 }
@@ -14,8 +21,13 @@
 	0% {
 		border-color: transparent;
 	}
+
 	50% {
 		border-color: black;
 	}
+}
+
+.heading-tertiary {
+	text-align: center;
 }
 

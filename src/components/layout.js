@@ -3,8 +3,8 @@ import { StaticQuery, Link, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
 import icon from '../img/tabIcon.png';
-import GitHub from '../img/github.png';
-import LinkedIn from '../img/linkedin.png';
+import GitHub from '../img/github.svg';
+import LinkedIn from '../img/linkedin.svg';
 
 import '../styles/main.scss';
 
@@ -39,7 +39,7 @@ export default ({children}) => (
 					<meta charSet="utf-8" />
 					<title>{data.site.siteMetadata.title}</title>
 					<meta name="description" content={data.site.siteMetadata.description} />
-					<meta name="theme-color" content=""/>
+					<meta name="theme-color" content="#09037d"/>
 
 		  			<meta name="robots" content="noindex, nofollow, noarchive" />
 
@@ -68,17 +68,19 @@ export default ({children}) => (
 					</div>
 				</header>
 
-				<main className="main" role="main">
-					{children}
-				</main>
+				<div className="container">
+					<main className="main" role="main">
+						{children}
+					</main>
 
-				<footer className="footer">
-					<div className="footer__icons">
-						<span>Find me on:</span>
-						<a href="#"><img src={GitHub} alt="Find Me on GitHub"/></a>
-						<a href="#"><img src={LinkedIn} alt="Find Me on LinkedIn"/></a>
-					</div>
-				</footer>
+					<footer className="footer">
+						<div className="footer__icons">
+							<span>Find me on:</span>
+							<a href="https://github.com/ARogala"><img src={GitHub} alt="Find Me on GitHub"/></a>
+							<a href="https://www.linkedin.com/in/andrew-rogala"><img src={LinkedIn} alt="Find Me on LinkedIn"/></a>
+						</div>
+					</footer>
+				</div>
 
 			</div>
 		)}

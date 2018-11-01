@@ -6,7 +6,7 @@
 
     color: white;
 
-	height: 250px;
+	height: 30vh;
 
     &__title-1 {
     	text-align: center;
@@ -32,7 +32,7 @@
 @media screen and (max-width: 750px) {
 	.header {
 		&__titleBox {
-  			transform: translateY(70%);
+  			transform: translateY(60%);
 		}
 	}
 }
@@ -40,12 +40,92 @@
 @media screen and (max-width: 320px) {
 	.header {
 		&__titleBox {
-  			transform: translateY(50%);
+  			transform: translateY(40%);
 		}
 	}
 }
 
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 70vh;
+}
+
 .main {
 	max-width: $max-width;
-	margin: auto;
+	margin: 0px auto auto auto;
+	padding: 10px;
+}
+
+.footer {
+	/* Prevent Chrome, Opera, and Safari from letting these items shrink
+	to smaller than their content's default minimum size. */
+	flex-shrink: 0;
+	z-index: 15;
+
+	background: $hero-color1;
+    background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
+
+	&__icons {
+		width: 140px;
+		margin: auto;
+	}
+
+	&__icons span {
+		color: white;
+		font-weight: bold;
+		display: block;
+		text-align: center;
+		margin: 5px 0px 5px 0px;
+	}
+
+	&__icons a {
+		color: white;
+		font-weight: bold;
+		display: inline-block;
+		margin: 5px 0px 5px 0px;
+		width: 70px;
+		height: 70px;
+	}
+
+	&__icons a img:hover {
+		animation: moveLogoOut 1s linear;
+	}
+}
+
+@keyframes moveLogoOut {
+	0% {
+
+        transform: scale3d(1.05,1.05,1.05);
+    }
+    20% {
+
+        transform: scale3d(1.1,1.1,1.1);
+    }
+    40% {
+
+        transform: scale3d(1.15,1.15,1.15);
+    }
+    60% {
+
+        transform: scale3d(1.1,1.1,1.1);
+    }
+    80% {
+
+        transform: scale3d(1.05,1.05,1.05);
+    }
+    100% {
+
+        transform: scale3d(1,1,1);
+    }
+}
+
+@media screen and (min-width: 750px) {
+
+	.footer {
+
+		&__icons {
+			margin: 0px auto 0px 10px;
+		}
+	}
 }

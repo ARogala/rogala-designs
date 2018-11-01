@@ -5,33 +5,30 @@ date: 2018-11-01
 author: Andrew Rogala
 ---
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Donec porttitor imperdiet consectetur. Orci varius natoque penatibus et
-magnis dis parturient montes, nascetur ridiculus mus. Morbi diam quam,
-eleifend consequat maximus quis, dignissim vel eros. Nunc ut est tincidunt,
-vulputate ligula sed, lobortis nisl. Maecenas finibus porttitor enim.
-Aliquam diam felis, posuere et turpis sit amet, condimentum ultricies odio.
-Quisque sodales nec dui in vehicula. Etiam rhoncus, sapien eget hendrerit
-suscipit, urna erat viverra elit, sit amet molestie arcu lorem in arcu.
-Sed sed ipsum odio. Cras et est et magna sagittis egestas non ac felis.
-Vivamus nec purus sed dolor porttitor facilisis.</p><br/>
-<p>Sed ante erat, finibus quis augue sit amet, semper facilisis erat.
-Vestibulum dapibus massa non justo faucibus volutpat.
-Aliquam imperdiet ut nunc a viverra. Vestibulum sed accumsan quam.
-Nulla ultricies metus et vestibulum ornare. Vivamus lobortis urna eu
-venenatis porttitor. Aliquam sit amet ullamcorper massa. Praesent eu
-lacus consectetur, maximus nunc a, mollis ante. Sed ac justo id eros
-egestas tristique vitae feugiat ipsum. Vivamus placerat, arcu molestie
-ultrices blandit, arcu ante tincidunt felis, et laoreet justo tellus a metus.
-ivamus ultricies erat sit amet urna ultricies, non pellentesque libero pharetra.
-In et purus feugiat, viverra dui quis, tincidunt odio. Mauris elementum volutpat
-turpis, vel accumsan velit pharetra quis. Nulla quis venenatis felis.</p><br/>
-<p>Maecenas varius rutrum leo. Aliquam dignissim rhoncus facilisis.
-Phasellus in dui id mi volutpat aliquet eu non dolor. Maecenas quis leo
-cursus, vulputate diam a, semper tellus. Fusce neque leo, sodales condimentum
-urpis a, finibus porta elit. Proin et massa mauris. Etiam lectus metus,
-venenatis ultricies egestas et, lacinia sed urna. Morbi semper quis orci
-at aliquet. Aliquam aliquam tellus at luctus laoreet. Curabitur quis lacus
-aliquam, eleifend lacus eget, eleifend mi. Donec efficitur imperdiet tincidunt.
-Etiam tellus erat, gravida et imperdiet eget, efficitur non nisl.
-Sed aliquam molestie libero et fermentum. Aliquam ac lacus felis.</p><br/>
+<section class="featuredwork">
+	<div>
+		<div class="featuredwork__imgbox">
+			<!-- gatsby adds alt text and class names to img -->
+			<img src="../img/uploads/csfeedy.png" />
+			<div class="featuredwork__imgbox-overlay">
+				<div class="featuredwork__imgbox-overlay--text">
+					<a class="featuredwork__imgbox-overlay--link" href="https://csfeedy.surge.sh">Check out this app!</a>
+				</div>
+			</div>
+		</div>
+		<p class="featuredwork__description-p">For those who aren’t sure, a feed reader is simply a program that allows
+		users to gather and display content from numerous web sites all in one location.
+		You can store hundreds of feeds in CSFeedy and see content from each web site without having to navigate
+		to the sites individually. Check out this <a href="https://www.lifewire.com/what-is-rss-2483592">article</a> for some more information.<br/><br/>
+		CSFeedy (Client-Side Feed Reader) is a single page web application built with <a href="https://reactjs.org/">React</a> JavaScript.
+		Some major dependencies are <a href="https://www.npmjs.com/package/rss-parser">rss-parser</a> to parse the
+		feeds on the client’s machine and <a href="https://github.com/Rob--W/cors-anywhere">CORS Anywhere</a> proxy server
+		which allows feeds to be loaded in the browser. Many thanks to the maintainers of these
+		projects without whom this application wouldn’t be possible.<br/><br/>
+		This project was fun and challenging to develop. I hope you enjoy using this application; I use it every day.
+		You can read more about the development of CSFeedy on the apps about page.
+		Also, feel free to check out the code for this application on its GitHub page.<br/>
+		<a href="https://github.com/ARogala/cs-feedy">View CSFeedy on GitHub</a>
+		</p>
+	</div>
+</section>

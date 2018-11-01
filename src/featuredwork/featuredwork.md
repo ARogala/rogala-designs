@@ -37,7 +37,7 @@ author: Andrew Rogala
         <div>
 		<div class="featuredwork__imgbox">
 			<!-- gatsby adds alt text and class names to img -->
-			<img src="../img/uploads/csfeedy.png" />
+			<img src="../img/uploads/favplaces.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://arogala.github.io/FavoritePlacesMap/">Check out this app!</a>

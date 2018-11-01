@@ -87,7 +87,7 @@ export default TechBlog;
 //each node has a unique id
 export const query = graphql`
 	query {
-		allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } filter: { frontmatter: { title: {ne: "About Me"}}}) {
+		allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } filter: { frontmatter: { category: {ne: null}}}) {
 			totalCount
 			edges {
 				node {

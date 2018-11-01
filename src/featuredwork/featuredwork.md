@@ -54,7 +54,7 @@ author: Andrew Rogala
                 Each information window contains a link to the locations Foursquare page, a link to search the location on Google Maps, 
                 the locations address, and a street view of the location.</p><br/>
 		<p class="featuredwork__description-p">I hope you enjoy this app as much as I enjoyed making it. 
-                In the future I plan to make this a map share application where you can share your favorite places with friends and family.</p><br/>
-                <a href="https://github.com/ARogala/FavoritePlacesMap">View Favorite Places on GitHub</a>
+                In the future I plan to make this a map share application where you can share your favorite places with friends and family.<br/>
+                <a href="https://github.com/ARogala/FavoritePlacesMap">View Favorite Places on GitHub</a></p>
 	</div>
 </section>

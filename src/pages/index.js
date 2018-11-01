@@ -3,53 +3,29 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 
 function Home({data}) {
+	//console.log(data.allMarkdownRemark.edges[0].node);
+	const content = data.allMarkdownRemark.edges[0].node;
 	return (
 		<Layout>
 			<div className="typewriter-box">
 				<p id="typewriter"></p><span className="blink-caret"></span>
 			</div>
 			<h3 className="heading-tertiary">Featured Work</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			Donec porttitor imperdiet consectetur. Orci varius natoque penatibus et
-			magnis dis parturient montes, nascetur ridiculus mus. Morbi diam quam,
-			eleifend consequat maximus quis, dignissim vel eros. Nunc ut est tincidunt,
-			vulputate ligula sed, lobortis nisl. Maecenas finibus porttitor enim.
-			Aliquam diam felis, posuere et turpis sit amet, condimentum ultricies odio.
-			Quisque sodales nec dui in vehicula. Etiam rhoncus, sapien eget hendrerit
-			suscipit, urna erat viverra elit, sit amet molestie arcu lorem in arcu.
-			Sed sed ipsum odio. Cras et est et magna sagittis egestas non ac felis.
-			Vivamus nec purus sed dolor porttitor facilisis.</p>
-			<p>Sed ante erat, finibus quis augue sit amet, semper facilisis erat.
-			Vestibulum dapibus massa non justo faucibus volutpat.
-			Aliquam imperdiet ut nunc a viverra. Vestibulum sed accumsan quam.
-			Nulla ultricies metus et vestibulum ornare. Vivamus lobortis urna eu
-			venenatis porttitor. Aliquam sit amet ullamcorper massa. Praesent eu
-			lacus consectetur, maximus nunc a, mollis ante. Sed ac justo id eros
-			egestas tristique vitae feugiat ipsum. Vivamus placerat, arcu molestie
-			ultrices blandit, arcu ante tincidunt felis, et laoreet justo tellus a metus.
-			ivamus ultricies erat sit amet urna ultricies, non pellentesque libero pharetra.
-			In et purus feugiat, viverra dui quis, tincidunt odio. Mauris elementum volutpat
-			turpis, vel accumsan velit pharetra quis. Nulla quis venenatis felis.</p>
-			<p>Maecenas varius rutrum leo. Aliquam dignissim rhoncus facilisis.
-			Phasellus in dui id mi volutpat aliquet eu non dolor. Maecenas quis leo
-			cursus, vulputate diam a, semper tellus. Fusce neque leo, sodales condimentum
-			urpis a, finibus porta elit. Proin et massa mauris. Etiam lectus metus,
-			venenatis ultricies egestas et, lacinia sed urna. Morbi semper quis orci
-			at aliquet. Aliquam aliquam tellus at luctus laoreet. Curabitur quis lacus
-			aliquam, eleifend lacus eget, eleifend mi. Donec efficitur imperdiet tincidunt.
-			Etiam tellus erat, gravida et imperdiet eget, efficitur non nisl.
-			Sed aliquam molestie libero et fermentum. Aliquam ac lacus felis.</p>
+			<div dangerouslySetInnerHTML={{ __html: content.html }}></div>
 		</Layout>
 	);
 }
 
 export default Home;
 
+//query just the featured work content
 export const query = graphql`
 	query {
-		site {
-			siteMetadata {
-				title
+		allMarkdownRemark(filter: {frontmatter: {title: {eq:"Featured Work"}}}) {
+			edges {
+				node {
+					html
+				}
 			}
 		}
 	}

@@ -62,6 +62,14 @@
 		opacity: 1;
 	}
 
+	.gatsby-resp-image-background-image {
+		border-radius: $border-radius-large;
+	}
+
+	.gatsby-resp-image-image {
+		border-radius: $border-radius-large;
+	}
+
 	//when imgbox hover or focus select overlay and img wrapper
 	//apply the transformations. Note: need to add focus-within polyfill for edge!
 	&__imgbox:hover &__imgbox-overlay {
@@ -93,6 +101,7 @@
 		width: 100%;
 		background: $hero-color1;
         background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
+		border-radius: $border-radius-large;
 
 		transition: .9s ease;
 		transform: rotateY(30deg);
@@ -133,7 +142,7 @@
 		text-align: center;
 		font-weight: bold;
 		color: white;
-		border-radius: 10px;
+		border-radius: $border-radius-large;
 		background: $hero-color1;
         background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
 	}

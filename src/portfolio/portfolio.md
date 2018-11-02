@@ -35,7 +35,7 @@ author: Andrew Rogala
 		<p class="featuredwork__description-p">The memory game was built for Udacity's Front End Nano-degree program. I made sure to go beyond the basic requirements and added a settings page to change the tile and color theme around. The game was fun to build and works well on both desktop and mobile devices. I play it from time to time and my nieces love it. Hope you enjoy it as well.<br/>
 	    <a href="https://github.com/ARogala/fend-project-memory-game">View Memory Game on GitHub</a></p>
 	</div>
-	<div clsss="featuredwork__6">
+	<div class="featuredwork__6">
 		<div class="featuredwork__imgbox" tabindex="0">
 			<img src="../img/uploads/timer.png" />
 			<div class="featuredwork__imgbox-overlay">
@@ -49,7 +49,7 @@ author: Andrew Rogala
 		<p class="featuredwork__description-p">I wrote this timer to demonstrate knowledge of the JavaScript language. Specifically, this timer has been coded with the modular design pattern and makes use of DOM manipulation in vanilla JavaScript. The algorithm was interesting and fun to figure out. Unfortunately, on mobile when the phone goes to sleep the script stops thus causing the timer to lose its accuracy. I am looking into a fix for this.<br/>
 	    <a href="https://github.com/ARogala/Timer">View timer on GitHub</a></p>
 	</div>
-	<div clsss="featuredwork__7">
+	<div class="featuredwork__7">
 		<div class="featuredwork__imgbox" tabindex="0">
 			<img src="../img/uploads/stopwatch.jpg" />
 			<div class="featuredwork__imgbox-overlay">
@@ -63,7 +63,7 @@ author: Andrew Rogala
 		<p class="featuredwork__description-p">I wrote this stop watch to demonstrate knowledge of the JavaScript language. This stop watch has been coded with the modular design pattern and makes use of DOM manipulation in vanilla JavaScript. I spent a fair about of time on this code and tried my best to make the code clean and well commented. I have integrated this code into both of my games and hope you can make use of it too. Similar to the timer the algorithm was challenging, interesting, and fun. I may rewrite both of these as React components.<br/>
 	    <a href="https://github.com/ARogala/StopWatch">View Stop Watch on GitHub</a></p>
 	</div>
-	<div clsss="featuredwork__8">
+	<div class="featuredwork__8">
 		<div class="featuredwork__imgbox" tabindex="0">
 			<img src="../img/uploads/customhomepage.png" />
 			<div class="featuredwork__imgbox-overlay">

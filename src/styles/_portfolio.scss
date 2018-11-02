@@ -20,6 +20,53 @@
 	&__8 {
 		margin-bottom: 20px;
 	}
-
 }
+
+@media screen and (min-width: 750px) {
+	.featuredwork {
+
+		&__4 {
+			width: 45%;
+			margin: 0px auto 20px auto;
+		}
+
+		&__4 &__imgbox {
+			height: 500px;
+		}
+
+		&__5 {
+			width: 45%;
+			margin: 0px auto 20px auto;
+		}
+
+		&__5 &__imgbox {
+			height: 500px;
+		}
+
+		&__6 {
+			width: 45%;
+			margin: 0px auto 20px auto;
+		}
+
+		&__6 &__imgbox {
+			height: 300px;
+		}
+
+		&__7 {
+			width: 45%;
+			margin: 0px auto 20px auto;
+		}
+
+		&__7 &__imgbox {
+			height: 300px;
+		}
+
+		&__8 {
+			width: 60%;
+			margin: 0px auto 20px auto;
+		}
+	}
+}
+
+
 

@@ -6,7 +6,7 @@ author: Andrew Rogala
 ---
 
 <section class="featuredwork">
-	<div>
+	<div class="featuredwork__1">
 		<div class="featuredwork__imgbox" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
 			<img src="../img/uploads/csfeedy.png" />
@@ -35,7 +35,7 @@ author: Andrew Rogala
 		Also, feel free to check out the code for this application on its GitHub page.<br/>
 		<a href="https://github.com/ARogala/cs-feedy">View CSFeedy on GitHub</a></p>
 	</div>
-    <div>
+    <div class="featuredwork__2">
 		<div class="featuredwork__imgbox" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
 			<img src="../img/uploads/favplaces.png" />
@@ -58,7 +58,7 @@ author: Andrew Rogala
         In the future I plan to make this a map share application where you can share your favorite places with friends and family.<br/>
         <a href="https://github.com/ARogala/FavoritePlacesMap">View Favorite Places on GitHub</a></p>
 	</div>
-	<div>
+	<div class="featuredwork__3">
 		<div class="featuredwork__imgbox" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
 			<img src="../img/uploads/YBArt.png" />

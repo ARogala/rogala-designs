@@ -40,3 +40,13 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: author, label: Author, widget: string }
       - { name: body, label: Body, widget: markdown }
+  - name: Portfolio
+    label: Portfolio
+    folder: src/portfolio
+    create: false
+    fields:
+      - { name: path, label: Path, default: src/portfolio/ }
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: date }
+      - { name: author, label: Author, widget: string }
+      - { name: body, label: Body, widget: markdown }

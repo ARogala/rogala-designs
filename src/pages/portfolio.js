@@ -16,7 +16,7 @@ function Portfolio({data}) {
 
 export default Portfolio;
 
-//query just the featured work content
+//query just the portfolio work content
 export const query = graphql`
 	query {
 		allMarkdownRemark(filter: {frontmatter: {title: {eq:"Portfolio"}}}) {

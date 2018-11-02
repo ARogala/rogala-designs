@@ -145,3 +145,45 @@
 	}
 }
 
+@media screen and (min-width: 750px) {
+	.featuredwork {
+		display: flex;
+		flex-wrap: wrap;
+
+		&__1 {
+			width: 45%;
+			margin: 0px auto 20px auto;
+		}
+
+		&__1 &__imgbox {
+			height: 250px;
+		}
+
+		&__2 {
+			width: 45%;
+			margin: 0px auto 20px auto;
+		}
+
+		&__2 &__imgbox {
+			height: 250px;
+		}
+
+		&__3 {
+			width: 60%;
+			margin: 0px auto 20px auto;
+		}
+
+		&__imgbox {
+			width: 100%;
+		}
+
+		&__tip {
+			width: 100%;
+		}
+
+		&__description-p {
+			width: 100%;
+		}
+	}
+}
+

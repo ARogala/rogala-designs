@@ -50,7 +50,7 @@
 		opacity: 1;
 	}
 
-	//when imgbox hover select overlay and img wrapper
+	//when imgbox hover or focus select overlay and img wrapper
 	//apply the transformations
 	&__imgbox:hover &__imgbox-overlay {
 		transform: rotateY(0);
@@ -58,6 +58,16 @@
 	}
 
 	&__imgbox:hover .gatsby-resp-image-wrapper {
+		transform: rotateY(0);
+		opacity: .4;
+	}
+
+	&__imgbox:focus-within &__imgbox-overlay {
+		transform: rotateY(0);
+		opacity: .8;
+	}
+
+	&__imgbox:focus-within .gatsby-resp-image-wrapper {
 		transform: rotateY(0);
 		opacity: .4;
 	}
@@ -93,11 +103,15 @@
 		font-size: 2rem;
 		font-weight: bold;
 		text-decoration: none;
-
 	}
 
 	&__imgbox-overlay--link:hover {
+		text-decoration: underline;
 
+	}
+
+	&__imgbox-overlay--link:focus {
+		outline: 4px solid black;
 	}
 
 	&__tip {
@@ -110,7 +124,6 @@
 		border-radius: 10px;
 		background: $hero-color1;
         background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
-
 	}
 
 	&__description-p {

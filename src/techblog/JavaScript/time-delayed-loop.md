@@ -6,7 +6,7 @@ author: Andrew Rogala
 category: JavaScript
 subCategory: Loops and Iteration
 ---
-Delaying the execution between iterations of a loop in JavaScript works a little bit differently than that which you may be familiar with. There is no built in sleep() function like Python. In JavaScript the easiest way to achieve this is with functions. In fact there will be NO for loop in the code. So without delay here is the code. You can copy and past this into Chrome console to see the magic.
+Delaying the execution between iterations of a loop in JavaScript works a little bit differently than other languages you may be familiar with. JavaScript has no built in sleep() function like Python. In JavaScript the easiest way to achieve this is with functions. In fact there will be NO for loop in the code!! So without delay here is the code. You can copy and past this into Chrome console to see the magic.
 <br/>
 <code>
 <pre>

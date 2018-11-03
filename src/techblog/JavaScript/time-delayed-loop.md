@@ -8,6 +8,7 @@ subCategory: Loops and Iteration
 ---
 Delaying the execution between iterations of a loop in JavaScript works a little bit differently than other languages you may be familiar with. JavaScript has no built in sleep() function like Python. In JavaScript the easiest way to achieve this is with functions. In fact there will be NO for loop in the code!! So without delay here is the code. You can copy and past this into Chrome console to see the magic.
 <br/>
+<br/>
 <code>
 <pre>
 //This function calls yourLoop() and sets the delay to 2 seconds
@@ -30,7 +31,7 @@ function yourLoop() {
   alert('Hi this is the code I want to execute');
   console.log(i);
   i++;
-  if(i<10) {
+  if(i < 10) {
     timeYourLoop();
   }
 }
@@ -40,4 +41,4 @@ timeYourLoop();
 </pre>
 </code>
 <br/>
-I am sure there are other ways to do this, and the code could be condensed a bit. However, sometimes I like the most verbose solutions if I feel it add some clarity to what is happening in the code.
+I am sure there are other ways to do this, and the code could be condensed a bit. However, sometimes I like the most verbose solutions if I feel it adds some clarity to what is happening in the code.

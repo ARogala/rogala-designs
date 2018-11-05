@@ -6,8 +6,10 @@ function BlogPost({data}) {
 	const post = data.markdownRemark;
 	return (
 		<Layout>
-			<h1>{post.frontmatter.title}</h1>
-			<div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+			<div className="blogpostContainer">
+				<h1>{post.frontmatter.title}</h1>
+				<div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+			</div>
 		</Layout>
 	);
 }

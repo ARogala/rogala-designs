@@ -23,4 +23,4 @@ exports.onRouteUpdate = ({location}) => {
 //syntax highlighting theme
 require("./src/styles/prism-coy-modify.css");
 // add line numbers
-require("prismjs/plugins/line-numbers/prism-line-numbers.css");
+require("./src/styles/prism-line-numbers-modify.css");

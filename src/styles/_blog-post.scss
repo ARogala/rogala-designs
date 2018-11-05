@@ -1,42 +1,41 @@
 @charset "UTF-8";
 
-.pre {
-	// background: lightgrey;
-	// border-radius: $border-radius-small;
-	// padding-left: 10px;
-	// padding-right: 10px;
-
-	// width: 90vw;
-	// max-width: $max-width;
-	// overflow-x: scroll;
+.blogpostContainer {
+	width: 90vw;
+	max-width: $max-width;
 }
 
-.code {
-	// font-family: 'Mali', sans-serif;
-	// font-weight: 700;
-	// color: blue;
+.gatsby-highlight {
+	border-radius: $border-radius-large;
+	box-shadow: 7px 7px 25px 0px rgba(0,0,0,0.45);
 }
+
 
 .gatsby-highlight-code-line {
   // background-color: #feb;
-  // display: block;
-  // margin-right: -1em;
-  // margin-left: -1em;
-  // padding-right: 1em;
-  // padding-left: 0.75em;
-  // border-left: 0.25em solid #f99;
+  background-color: #FEFFE3;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #f99;
 }
 
-/**
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+	padding-left: 2.7em;
+}
+
+
+/** Fix highlighting
  * Add back the container background-color, border-radius, padding, margin
  * and overflow that we removed from <pre>.
  */
 .gatsby-highlight {
-  // background-color: #fdf6e3;
-  // border-radius: 0.3em;
-  // margin: 0.5em 0;
-  // padding: 1em;
-  // overflow: auto;
+  background-color: #fdfdfd;
+  margin: 1em 0;
+  overflow: auto;
 }
 
 /**
@@ -47,10 +46,20 @@
  * 3. Adjust the position of the line numbers
  */
 .gatsby-highlight pre[class*="language-"] {
-  // background-color: transparent;
-  // margin: 0;
-  // padding: 0;
-  // overflow: initial;
-  // float: left; /* 1 */
-  // min-width: 100%; /* 2 */
+  background-color: transparent;
+  margin: 0.5em 0;
+  padding: 0;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
 }
+
+@media screen and (max-width: 767px) {
+	.gatsby-highlight {
+		box-shadow: none;
+		border-radius: 0;
+	}
+
+}
+
+

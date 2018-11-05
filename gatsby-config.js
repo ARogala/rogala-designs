@@ -23,6 +23,16 @@ module.exports = {
 							linkImagesToOriginal: false,
 							quality: 100,
 						}
+					},
+					{
+						resolve: 'gatsby-remark-prismjs',
+						options: {
+							classPrefix: 'language-',
+							inlineCodeMarker: '>',
+							aliases: {js: "javascript"},
+							showLineNumbers: true,
+							noInlineHighlight: false,
+						}
 					}
 				]
 			}

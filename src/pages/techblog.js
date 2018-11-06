@@ -69,7 +69,7 @@ function TechBlog({data}) {
 				{recentPosts.map(({node}) => (
 					<div key={node.id} className="techblog__post">
 						<div className="techblog__imgbox">
-							<img src={blogImg} />
+							<img src={blogImg} alt="" />
 						</div>
 						<div>
 							<Link to={node.fields.slug}>{node.frontmatter.title}</Link><br/>

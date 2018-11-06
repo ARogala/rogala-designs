@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import groupBy from '../groupBy.js';
 import Layout from '../components/layout';
 
 import blogImg from '../img/blogPostImage.jpg';

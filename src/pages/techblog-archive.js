@@ -27,10 +27,11 @@ class TechBlogArchive extends React.Component {
 		//console.log(posts);
 		//add groupCategory so blog posts can be sorted, grouped, and displayed
 		//by category - subCategory
-		posts.map(({node}, index) => {
-			return posts[index].groupCategory = node.frontmatter.category + ' - ' + node.frontmatter.subCategory;
-		});
-		//add category to edges so nodes(blog posts) can be filtered by category
+		// posts.map(({node}, index) => {
+		// 	return posts[index].groupCategory = node.frontmatter.category + ' - ' + node.frontmatter.subCategory;
+		// });
+
+		//add category to edges so nodes(blog posts) can be filtered, sorted, grouped by category
 		posts.map(({node}, index) => {
 			return posts[index].category = node.frontmatter.category;
 		});
@@ -63,13 +64,13 @@ class TechBlogArchive extends React.Component {
 		const pattern = new RegExp(escapeRegExp(filterText), 'i');
 
 		let filteredPosts = posts.filter((post) => pattern.test((post.title + post.category + post.subCategory).replace(/ /g,'')));
-		filteredPosts.sort(sortBy('groupCategory'));
+		filteredPosts.sort(sortBy('subCategory'));
 		//console.log(filteredPosts);
 
-		const groupedPosts = groupBy(filteredPosts, 'groupCategory');
-		//console.log(groupedPosts);
+		const groupedPosts = groupBy(filteredPosts, 'category');
+		console.log(groupedPosts);
 		const allCategories = Object.keys(groupedPosts);
-		console.log(allCategories);
+		// console.log(allCategories);
 
 		/*
 		for each post category if the number of posts is greater than 1
@@ -106,7 +107,7 @@ class TechBlogArchive extends React.Component {
 				singlePost.push(
 					<li key={groupedPosts[allCategories[i]][0].node.id}>
 						<Link to={groupedPosts[allCategories[i]][0].node.fields.slug}>
-							{groupedPosts[allCategories[i]][0].node.frontmatter.title}
+							{groupedPosts[allCategories[i]][0].node.frontmatter.category + ' - ' + groupedPosts[allCategories[i]][0].node.frontmatter.title}
 						</Link>
 					</li>
 				);
@@ -127,10 +128,14 @@ class TechBlogArchive extends React.Component {
 					/>
 				</div>
 				<h2>Archived Posts: {this.props.data.allMarkdownRemark.totalCount}</h2>
-				<span>Multiple Posts in SubCategory:</span>
-				{dropDownUL}
-				<span>Single Post in SubCategory:</span>
-				{singlePost}
+				<ul className="postList">
+					<span>Multiple Posts in Category:</span>
+					{dropDownUL}
+					<span>Single Post in Category:</span>
+					{singlePost}
+				</ul>
+
+				<Link to="/techblog">Back To Blog</Link>
 			</Layout>
 		);
 	}

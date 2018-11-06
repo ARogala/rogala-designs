@@ -82,7 +82,7 @@ class TechBlogArchive extends React.Component {
 				//build the dropDownUL
 				dropDownUL.push(
 					<li key={i} className="postlist__dropdown-li">
-						<span>{allCategories[i]}:</span>
+						<span className="postlist__category">{allCategories[i]}:</span>
 						<ul aria-label="submenu" className="postlist__dropdown-ul">
 							{groupedPosts[allCategories[i]].map((post) => {
 								//console.log(post.node);
@@ -117,8 +117,8 @@ class TechBlogArchive extends React.Component {
 		return (
 			<Layout>
 				<div className="search">
-					<h2>Archived Posts: {this.props.data.allMarkdownRemark.totalCount}</h2>
-					<label htmlFor="filterPosts">Filter Posts:</label>
+					<h2 className="search__title">Archived Posts: {this.props.data.allMarkdownRemark.totalCount}</h2>
+					<label className="search__label" htmlFor="filterPosts">Filter Posts:</label>
 					<input
 						type="text"
 						className="search__input"
@@ -130,13 +130,12 @@ class TechBlogArchive extends React.Component {
 				</div>
 
 				<ul className="postlist">
-					<span>Multiple Posts in Category:</span>
 					{dropDownUL}
-					<span>Single Post in Category:</span>
+					<span className="postlist__title">Post Categories with Single Posts:</span>
 					{singlePost}
 				</ul>
 
-				<Link to="/techblog">Back To Blog</Link>
+				<Link to="/techblog" className="postlist__link">Back To Blog</Link>
 			</Layout>
 		);
 	}

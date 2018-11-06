@@ -2,6 +2,9 @@ import React from 'react';
 
 import { Link, graphql } from 'gatsby';
 
+import escapeRegExp from 'escape-string-regexp';
+import sortBy from 'sort-by';
+
 import groupBy from '../groupBy.js';
 import Layout from '../components/layout';
 
@@ -19,7 +22,10 @@ class TechBlogArchive extends React.Component {
 
 	render() {
 		let posts = this.props.data.allMarkdownRemark.edges;
-		let filterText = this.state.filterText;
+		let filterText = this.state.filterText.trim();
+		//remove all spaces g is a global modifier (in other words replace all spaces with '')
+		filterText = filterText.replace(/ /g, '');
+
 		//console.log(posts);
 		//add category to edges so nodes(blog posts) can be sorted by category
 		posts.map(({node}, index) => {

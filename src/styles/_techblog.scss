@@ -31,33 +31,6 @@
 		clip-path: circle(38% at 50% 50%);
 	}
 
-	&__post a {
-		background: $hero-color1;
-		background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
-		color: white;
-		font-weight: bold;
-		text-decoration: none;
-		padding: 2px 4px 2px 4px;
-		border-radius: $border-radius-large;
-	}
-
-	&__post a:hover {
-		text-decoration: underline;
-		background: #61B5ED;
-		color: black;
-	}
-
-	&__post a:focus {
-		outline: none;
-		text-decoration: underline;
-		background: #61B5ED;
-		color: black;
-	}
-
-	&__post a:visited {
-		background: lightblue;
-	}
-
 	.dropdown {
 		list-style: none;
 
@@ -67,6 +40,31 @@
 	}
 }
 
+.blogLink {
+	background: $hero-color1;
+	background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 2px 4px 2px 4px;
+	border-radius: $border-radius-large;
 
+	&:hover {
+		text-decoration: underline;
+		background: #61B5ED;
+		color: black;
+	}
+
+	&:focus {
+		outline: none;
+		text-decoration: underline;
+		background: #61B5ED;
+		color: black;
+	}
+
+	&:visited {
+		background: lightblue;
+	}
+}
 
 

@@ -52,32 +52,4 @@
 		list-style: none;
 		padding: 5px;
 	}
-
-	&__link {
-		background: $hero-color1;
-		background: linear-gradient(45deg, $hero-color1 0%, $hero-color2 50%, $hero-color1 100%);
-		color: white;
-		font-weight: bold;
-		text-decoration: none;
-		padding: 2px 4px 2px 4px;
-		border-radius: $border-radius-large;
-	}
-
-	&__link:hover {
-		text-decoration: underline;
-		background: #61B5ED;
-		color: black;
-	}
-
-	&__link:focus {
-		outline: none;
-		text-decoration: underline;
-		background: #61B5ED;
-		color: black;
-	}
-
-	&__link:visited {
-		background: lightblue;
-	}
-
 }

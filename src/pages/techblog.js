@@ -19,7 +19,7 @@ function TechBlog({data}) {
 							<img src={blogImg} alt="" />
 						</div>
 						<div>
-							<Link to={node.fields.slug}>{node.frontmatter.title}</Link><br/>
+							<Link to={node.fields.slug} className="blogLink">{node.frontmatter.title}</Link><br/>
 							<span>Category: {node.frontmatter.category}</span><br/>
 							<span>SubCategory: {node.frontmatter.subCategory}</span><br/>
 							<span>{node.frontmatter.date}</span><br/>
@@ -27,7 +27,7 @@ function TechBlog({data}) {
 						</div>
 					</div>
 				))}
-				<Link to='/techblog-archive'>Blog Archive: {data.allMarkdownRemark.totalCount} Posts</Link>
+				<Link to='/techblog-archive' className="blogLink">Blog Archive: {data.allMarkdownRemark.totalCount} Posts</Link>
 			</div>
 		</Layout>
 	);

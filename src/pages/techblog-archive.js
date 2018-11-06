@@ -31,7 +31,7 @@ class TechBlogArchive extends React.Component {
 		// 	return posts[index].groupCategory = node.frontmatter.category + ' - ' + node.frontmatter.subCategory;
 		// });
 
-		//add category to edges so nodes(blog posts) can be filtered, sorted, grouped by category
+		//add category to edges so nodes(blog posts) can be filtered, sorted, and grouped by category
 		posts.map(({node}, index) => {
 			return posts[index].category = node.frontmatter.category;
 		});
@@ -88,7 +88,7 @@ class TechBlogArchive extends React.Component {
 								//console.log(post.node);
 								return (
 									<li key={post.node.id}>
-										<Link to={post.node.fields.slug} className="postlist__link">
+										<Link to={post.node.fields.slug} className="blogLink">
 											{post.node.frontmatter.title}
 										</Link>
 									</li>
@@ -106,7 +106,7 @@ class TechBlogArchive extends React.Component {
 				//console.log(groupedPosts[allCategories[i]][0]);
 				singlePost.push(
 					<li key={groupedPosts[allCategories[i]][0].node.id} className="postlist__single-li">
-						<Link to={groupedPosts[allCategories[i]][0].node.fields.slug} className="postlist__link">
+						<Link to={groupedPosts[allCategories[i]][0].node.fields.slug} className="blogLink">
 							{groupedPosts[allCategories[i]][0].node.frontmatter.category + ' - ' + groupedPosts[allCategories[i]][0].node.frontmatter.title}
 						</Link>
 					</li>
@@ -135,7 +135,7 @@ class TechBlogArchive extends React.Component {
 					{singlePost}
 				</ul>
 
-				<Link to="/techblog" className="postlist__link">Back To Blog</Link>
+				<Link to="/techblog" className="blogLink">Back To Blog</Link>
 			</Layout>
 		);
 	}

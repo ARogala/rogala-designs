@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 
 function BlogPost({data}) {
@@ -9,6 +9,10 @@ function BlogPost({data}) {
 			<div className="blogpostContainer">
 				<h1>{post.frontmatter.title}</h1>
 				<div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+			</div>
+			<div className="linkbox">
+				<Link to="/techblog" className="linkbox__link">Back To Blog</Link>
+				<Link to="/techblog-archive" className="linkbox__link">Blog Archive</Link>
 			</div>
 		</Layout>
 	);

@@ -22,15 +22,96 @@ class TechBlogArchive extends React.Component {
 
 	render() {
 		let posts = this.props.data.allMarkdownRemark.edges;
-		let filterText = this.state.filterText.trim();
-		//remove all spaces g is a global modifier (in other words replace all spaces with '')
-		filterText = filterText.replace(/ /g, '');
+		let filterText = this.state.filterText;
 
 		//console.log(posts);
-		//add category to edges so nodes(blog posts) can be sorted by category
+		//add groupCategory so blog posts can be sorted, grouped, and displayed
+		//by category - subCategory
 		posts.map(({node}, index) => {
-			return posts[index].category = node.frontmatter.category + ' - ' + node.frontmatter.subCategory;
+			return posts[index].groupCategory = node.frontmatter.category + ' - ' + node.frontmatter.subCategory;
 		});
+		//add category to edges so nodes(blog posts) can be filtered by category
+		posts.map(({node}, index) => {
+			return posts[index].category = node.frontmatter.category;
+		});
+		//add subCategory to edges so nodes(blog posts) can be filtered by subCategory
+		posts.map(({node}, index) => {
+			return posts[index].subCategory = node.frontmatter.subCategory;
+		});
+		//add title to edges so nodes(blog posts) can be filtered by title
+		posts.map(({node}, index) => {
+			return posts[index].title = node.frontmatter.title;
+		});
+
+		//now filter posts on filter text then group and build DOM
+
+		//remove all spaces g is a global modifier (in other words replace all spaces with '')
+		filterText = filterText.replace(/ /g, '');
+		//console.log(filterText);
+
+		/* 	Filter logic
+			escapeRegExp escapes special characters
+			Regular expressions are patterns used to match character combinations in strings
+
+			so pattern will be a regexp with special char and case 'i' ignored
+			then filter the posts array useing test() to search for a match
+			between the regular expression and a specified string ignoring case and
+			special char.
+			finally sort the filtered list by category
+		*/
+
+		const pattern = new RegExp(escapeRegExp(filterText), 'i');
+
+		let filteredPosts = posts.filter((post) => pattern.test((post.title + post.category + post.subCategory).replace(/ /g,'')));
+		filteredPosts.sort(sortBy('groupCategory'));
+		//console.log(filteredPosts);
+
+		const groupedPosts = groupBy(filteredPosts, 'groupCategory');
+		//console.log(groupedPosts);
+		const allCategories = Object.keys(groupedPosts);
+		console.log(allCategories);
+
+		/*
+		for each post category if the number of posts is greater than 1
+		build the DOM
+		*/
+		const dropDownUL = [];
+		for(let i = 0; i < allCategories.length; i++ ) {
+			if(groupedPosts[allCategories[i]].length > 1) {
+				//build the dropDownUL
+				dropDownUL.push(
+					<li key={i} className="dropdown">
+						<span className="dropdown__btn">{allCategories[i]}:</span>
+						<ul aria-label="submenu" className="dropdown__ul">
+							{groupedPosts[allCategories[i]].map((post) => {
+								//console.log(post.node);
+								return (
+									<li key={post.node.id}>
+										<Link to={post.node.fields.slug}>
+											{post.node.frontmatter.title}
+										</Link>
+									</li>
+								);
+							})}
+						</ul>
+					</li>
+				);
+			}
+		}
+		//build the DOM for the categories with one post
+		const singlePost = [];
+		for(let i = 0; i < allCategories.length; i++) {
+			if(groupedPosts[allCategories[i]].length === 1) {
+				//console.log(groupedPosts[allCategories[i]][0]);
+				singlePost.push(
+					<li key={groupedPosts[allCategories[i]][0].node.id}>
+						<Link to={groupedPosts[allCategories[i]][0].node.fields.slug}>
+							{groupedPosts[allCategories[i]][0].node.frontmatter.title}
+						</Link>
+					</li>
+				);
+			}
+		}
 
 		return (
 			<Layout>
@@ -41,10 +122,15 @@ class TechBlogArchive extends React.Component {
 						className="searchInput"
 						id="filterPosts"
 						placeholder="Search Posts..."
-						value={filterText}
+						value={this.state.filterText}
 						onChange={(e) => this.handleFilterTextChange(e.target.value)}
 					/>
 				</div>
+				<h2>Archived Posts: {this.props.data.allMarkdownRemark.totalCount}</h2>
+				<span>Multiple Posts in SubCategory:</span>
+				{dropDownUL}
+				<span>Single Post in SubCategory:</span>
+				{singlePost}
 			</Layout>
 		);
 	}
@@ -67,8 +153,6 @@ export const query = graphql`
 						category
 						subCategory
 					}
-					excerpt(pruneLength: 70)
-					html
 					fields {
 						slug
 					}

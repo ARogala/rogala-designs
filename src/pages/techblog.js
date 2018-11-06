@@ -4,6 +4,8 @@ import { Link, graphql } from 'gatsby';
 import groupBy from '../groupBy.js';
 import Layout from '../components/layout';
 
+import blogImg from '../img/blogPostImage.jpg';
+
 function TechBlog({data}) {
 	//console.log(data);
 	//add category to edges so nodes(blog posts) can be sorted by category
@@ -25,9 +27,9 @@ function TechBlog({data}) {
 		if(groupedPosts[allCategories[i]].length > 1) {
 			//build the dropDownUL
 			dropDownUL.push(
-				<li key={i}>
-					<span>{allCategories[i]}:</span>
-					<ul aria-label="submenu" className="dropDown">
+				<li key={i} className="dropdown">
+					<span className="dropdown__btn">{allCategories[i]}:</span>
+					<ul aria-label="submenu" className="dropdown__ul">
 						{groupedPosts[allCategories[i]].map((post) => {
 							//console.log(post.node);
 							return (
@@ -58,24 +60,31 @@ function TechBlog({data}) {
 			);
 		}
 	}
-	let recentPosts = data.allMarkdownRemark.edges.slice(0,2);
+	let recentPosts = data.allMarkdownRemark.edges.slice(0,10);
 	return (
 		<Layout>
-			<div>
-				<h1>Web Development Blog</h1>
-				<h2>Recent Posts:</h2>
+			<div className="techblog">
+				<h1 className="techblog__title">Web Development Blog</h1>
+				<h2 className="techblog__recent">Recent Posts:</h2>
 				{recentPosts.map(({node}) => (
-					<div key={node.id}>
-						<Link to={node.fields.slug}>{node.frontmatter.title}</Link><br/>
-						<span>Category: {node.frontmatter.category}</span><br/>
-						<span>{node.frontmatter.date}</span><br/>
-						<p>{node.excerpt}</p>
+					<div key={node.id} className="techblog__post">
+						<div className="techblog__imgbox">
+							<img src={blogImg} />
+						</div>
+						<div>
+							<Link to={node.fields.slug}>{node.frontmatter.title}</Link><br/>
+							<span>Category: {node.frontmatter.category}</span><br/>
+							<span>SubCategory: {node.frontmatter.subCategory}</span><br/>
+							<span>{node.frontmatter.date}</span><br/>
+							<p>Excerpt: {node.excerpt}</p>
+						</div>
 					</div>
 
 				))}
-				<h2>Total Archived Posts: {data.allMarkdownRemark.totalCount}</h2>
+				<h2>Archived Posts: {data.allMarkdownRemark.totalCount}</h2>
+				<span>Multiple Posts in SubCategory:</span>
 				{dropDownUL}
-				<span>Single Posts:</span>
+				<span>Single Post in SubCategory:</span>
 				{singlePost}
 			</div>
 		</Layout>
@@ -99,7 +108,7 @@ export const query = graphql`
 						category
 						subCategory
 					}
-					excerpt
+					excerpt(pruneLength: 70)
 					html
 					fields {
 						slug

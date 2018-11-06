@@ -68,7 +68,7 @@ class TechBlogArchive extends React.Component {
 		//console.log(filteredPosts);
 
 		const groupedPosts = groupBy(filteredPosts, 'category');
-		console.log(groupedPosts);
+		//console.log(groupedPosts);
 		const allCategories = Object.keys(groupedPosts);
 		// console.log(allCategories);
 
@@ -81,14 +81,14 @@ class TechBlogArchive extends React.Component {
 			if(groupedPosts[allCategories[i]].length > 1) {
 				//build the dropDownUL
 				dropDownUL.push(
-					<li key={i} className="dropdown">
-						<span className="dropdown__btn">{allCategories[i]}:</span>
-						<ul aria-label="submenu" className="dropdown__ul">
+					<li key={i} className="postlist__dropdown-li">
+						<span>{allCategories[i]}:</span>
+						<ul aria-label="submenu" className="postlist__dropdown-ul">
 							{groupedPosts[allCategories[i]].map((post) => {
 								//console.log(post.node);
 								return (
 									<li key={post.node.id}>
-										<Link to={post.node.fields.slug}>
+										<Link to={post.node.fields.slug} className="postlist__link">
 											{post.node.frontmatter.title}
 										</Link>
 									</li>
@@ -105,8 +105,8 @@ class TechBlogArchive extends React.Component {
 			if(groupedPosts[allCategories[i]].length === 1) {
 				//console.log(groupedPosts[allCategories[i]][0]);
 				singlePost.push(
-					<li key={groupedPosts[allCategories[i]][0].node.id}>
-						<Link to={groupedPosts[allCategories[i]][0].node.fields.slug}>
+					<li key={groupedPosts[allCategories[i]][0].node.id} className="postlist__single-li">
+						<Link to={groupedPosts[allCategories[i]][0].node.fields.slug} className="postlist__link">
 							{groupedPosts[allCategories[i]][0].node.frontmatter.category + ' - ' + groupedPosts[allCategories[i]][0].node.frontmatter.title}
 						</Link>
 					</li>
@@ -116,19 +116,20 @@ class TechBlogArchive extends React.Component {
 
 		return (
 			<Layout>
-				<div className="searchBarContainer">
+				<div className="search">
+					<h2>Archived Posts: {this.props.data.allMarkdownRemark.totalCount}</h2>
 					<label htmlFor="filterPosts">Filter Posts:</label>
 					<input
 						type="text"
-						className="searchInput"
+						className="search__input"
 						id="filterPosts"
 						placeholder="Search Posts..."
 						value={this.state.filterText}
 						onChange={(e) => this.handleFilterTextChange(e.target.value)}
 					/>
 				</div>
-				<h2>Archived Posts: {this.props.data.allMarkdownRemark.totalCount}</h2>
-				<ul className="postList">
+
+				<ul className="postlist">
 					<span>Multiple Posts in Category:</span>
 					{dropDownUL}
 					<span>Single Post in Category:</span>

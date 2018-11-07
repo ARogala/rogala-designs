@@ -2,20 +2,35 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 
-function BlogPost({data}) {
-	const post = data.markdownRemark;
-	return (
-		<Layout>
-			<div className="blogpostContainer">
-				<h1>{post.frontmatter.title}</h1>
-				<div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-			</div>
-			<div className="linkbox">
-				<Link to="/techblog" className="linkbox__link">Back To Blog</Link>
-				<Link to="/techblog-archive" className="linkbox__link">Blog Archive</Link>
-			</div>
-		</Layout>
-	);
+class BlogPost extends React.Component {
+	render() {
+		const post = this.props.data.markdownRemark;
+		const { previous, next } = this.props.pageContext;
+		return (
+			<Layout>
+				<div className="blogpostContainer">
+					<h1>{post.frontmatter.title}</h1>
+					<span>{post.frontmatter.date}</span>
+					<div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+				</div>
+
+				<div className="linkbox">
+					{ previous &&
+					<Link to={previous.fields.slug} rel="prev">
+						Previous Post {previous.frontmatter.title}
+					</Link>
+					}
+					<Link to="/techblog" className="linkbox__link">Back To Blog</Link>
+					<Link to="/techblog-archive" className="linkbox__link">Blog Archive</Link>
+					{ next &&
+					<Link to={next.fields.slug} rel="next">
+						Next Post {next.frontmatter.title}
+					</Link>
+					}
+				</div>
+			</Layout>
+		);
+	}
 }
 
 export default BlogPost;
@@ -26,7 +41,7 @@ export const query = graphql`
 			html
 			frontmatter {
 				title
-				date
+				date(formatString: "MMMM DD, YYYY")
 				author
 			}
 		}

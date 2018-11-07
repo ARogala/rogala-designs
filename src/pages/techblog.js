@@ -27,7 +27,7 @@ function TechBlog({data}) {
 						</div>
 					</div>
 				))}
-				<Link to='/techblog-archive' className="blogLink">Blog Archive: {data.allMarkdownRemark.totalCount} Posts</Link>
+				<Link to='/techblog-archive' className="paginationLink">Blog Archive</Link>
 			</div>
 		</Layout>
 	);

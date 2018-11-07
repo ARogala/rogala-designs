@@ -137,7 +137,7 @@ class TechBlogArchive extends React.Component {
 						{singlePost}
 					</ul>
 
-					<Link to="/techblog" className="blogLink">Back To Blog</Link>
+					<Link to="/techblog" className="paginationLink">Back To Blog</Link>
 				</div>
 			</Layout>
 		);

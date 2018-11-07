@@ -67,4 +67,32 @@
 	}
 }
 
+.paginationLink {
+	background: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px 4px 2px 4px;
+    border-radius: $border-radius-large;
+
+    display: block;
+    width: 75px;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+
+    &:hover {
+    	text-decoration: underline;
+    	background: #61B5ED;
+    	color: black;
+    }
+
+    &:focus {
+    	outline: none;
+    	text-decoration: underline;
+    	background: #61B5ED;
+    	color: black;
+    }
+}
+
 

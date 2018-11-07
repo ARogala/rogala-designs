@@ -15,18 +15,24 @@ class BlogPost extends React.Component {
 				</div>
 
 				<div className="linkbox">
-					{ previous &&
-					<Link to={previous.fields.slug} rel="prev">
-						Previous Post {previous.frontmatter.title}
-					</Link>
-					}
-					<Link to="/techblog" className="linkbox__link">Back To Blog</Link>
-					<Link to="/techblog-archive" className="linkbox__link">Blog Archive</Link>
-					{ next &&
-					<Link to={next.fields.slug} rel="next">
-						Next Post {next.frontmatter.title}
-					</Link>
-					}
+					<div>
+						{ previous &&
+						<Link to={previous.fields.slug} className="paginationLink" rel="prev">
+							Previous Post
+						</Link>
+						}
+					</div>
+					<div>
+						<Link to="/techblog" className="paginationLink">Back To Blog</Link>
+						<Link to="/techblog-archive" className="paginationLink">Blog Archive</Link>
+					</div>
+					<div>
+						{ next &&
+						<Link to={next.fields.slug} className="paginationLink" rel="next">
+							Next Post
+						</Link>
+						}
+					</div>
 				</div>
 			</Layout>
 		);

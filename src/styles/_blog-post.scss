@@ -55,33 +55,9 @@
 }
 
 .linkbox {
-
-   &__link {
-    background: black;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 2px 4px 2px 4px;
-    border-radius: $border-radius-large;
-
-    display: block;
-    width: 150px;
-    margin: 5px auto 5px auto;
-    text-align: center;
-   }
-
-   &__link:hover {
-    text-decoration: underline;
-    background: #61B5ED;
-    color: black;
-   }
-
-   &__link:focus {
-    outline: none;
-    text-decoration: underline;
-    background: #61B5ED;
-    color: black;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {

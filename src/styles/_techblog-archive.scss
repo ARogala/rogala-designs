@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
-.search {
+.archive {
 	width: 90vw;
-	max-width: $max-width;
+	max-width: 650px;
+}
+
+.search {
+
 	&__title {
 		text-align: center;
 	}
@@ -22,8 +26,6 @@
 }
 
 .postlist {
-	width: 90vw;
-	max-width: $max-width;
 	text-align: center;
 	margin-bottom: 10px;
 

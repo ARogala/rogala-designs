@@ -116,26 +116,29 @@ class TechBlogArchive extends React.Component {
 
 		return (
 			<Layout>
-				<div className="search">
-					<h2 className="search__title">Archived Posts: {this.props.data.allMarkdownRemark.totalCount}</h2>
-					<label className="search__label" htmlFor="filterPosts">Filter Posts:</label>
-					<input
-						type="text"
-						className="search__input"
-						id="filterPosts"
-						placeholder="Search Posts..."
-						value={this.state.filterText}
-						onChange={(e) => this.handleFilterTextChange(e.target.value)}
-					/>
+				<div className="archive">
+					<div className="search">
+						<h1 className="search__title">Web Development Blog Archives</h1>
+						<h2 className="search__title">Total Posts: {this.props.data.allMarkdownRemark.totalCount}</h2>
+						<label className="search__label" htmlFor="filterPosts">Filter Posts:</label>
+						<input
+							type="text"
+							className="search__input"
+							id="filterPosts"
+							placeholder="Search Posts..."
+							value={this.state.filterText}
+							onChange={(e) => this.handleFilterTextChange(e.target.value)}
+						/>
+					</div>
+
+					<ul className="postlist">
+						{dropDownUL}
+						<span className="postlist__title">Post Categories with Single Posts:</span>
+						{singlePost}
+					</ul>
+
+					<Link to="/techblog" className="blogLink">Back To Blog</Link>
 				</div>
-
-				<ul className="postlist">
-					{dropDownUL}
-					<span className="postlist__title">Post Categories with Single Posts:</span>
-					{singlePost}
-				</ul>
-
-				<Link to="/techblog" className="blogLink">Back To Blog</Link>
 			</Layout>
 		);
 	}

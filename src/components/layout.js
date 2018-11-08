@@ -62,7 +62,7 @@ export default ({children}) => (
 					</nav>
 					<div className="header__titleBox">
 						<h1 className="header__title-1">{data.site.siteMetadata.title}</h1>
-						<h2 className="header__title-2">Front-End Web Development</h2>
+						<h2 className="header__title-2">Front-End Development</h2>
 					</div>
 				</header>
 

@@ -1,7 +1,7 @@
 module.exports = {
 	siteMetadata: {
-		title: `Rogala Designs`,
-		description: 'Rogala Designs Front-End Development: Portfolio Site and Web Development Blog of Andrew Rogala'
+		title: `Rogala Web Designs`,
+		description: 'Front-End Web Design and Development. Welcome to the Portfolio Site and Web Development Blog of Andrew Rogala'
 	},
 	plugins: [
 		'gatsby-plugin-sharp',

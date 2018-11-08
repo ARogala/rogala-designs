@@ -41,8 +41,6 @@ export default ({children}) => (
 					<meta name="description" content={data.site.siteMetadata.description} />
 					<meta name="theme-color" content="#09037d"/>
 
-		  			<meta name="robots" content="noindex, nofollow, noarchive" />
-
 		  			<link rel="shortcut icon" href={icon} />
 		  			<link href="https://fonts.googleapis.com/css?family=Mali:500,700" rel="stylesheet" />
 				</Helmet>

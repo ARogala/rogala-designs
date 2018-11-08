@@ -1,5 +1,5 @@
 ---
-path: src/about/
+path: src/markdown/about/
 title: About Me
 date: 2018-10-31T00:00:00.000Z
 author: Andrew Rogala

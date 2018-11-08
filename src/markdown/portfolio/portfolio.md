@@ -1,5 +1,5 @@
 ---
-path: src/portfolio/
+path: src/markdown/portfolio/
 title: Portfolio
 date: 2018-11-02
 author: Andrew Rogala
@@ -7,7 +7,7 @@ author: Andrew Rogala
 <section class="featuredwork">
 	<div class="featuredwork__4">
 		<div class="featuredwork__imgbox" tabindex="0">
-			<img src="../img/uploads/frogger.png" />
+			<img src="../../img/uploads/frogger.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://andrewrogalafrogger.surge.sh">Check out this app!</a>
@@ -23,7 +23,7 @@ author: Andrew Rogala
 	</div>
 	<div class="featuredwork__5">
 		<div class="featuredwork__imgbox" tabindex="0">
-			<img src="../img/uploads/memorygame.png" />
+			<img src="../../img/uploads/memorygame.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://andrewrogalamemorygame.surge.sh">Check out this app!</a>
@@ -37,7 +37,7 @@ author: Andrew Rogala
 	</div>
 	<div class="featuredwork__6">
 		<div class="featuredwork__imgbox" tabindex="0">
-			<img src="../img/uploads/timer.png" />
+			<img src="../../img/uploads/timer.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://arogalatimer.surge.sh">Check out this app!</a>
@@ -51,7 +51,7 @@ author: Andrew Rogala
 	</div>
 	<div class="featuredwork__7">
 		<div class="featuredwork__imgbox" tabindex="0">
-			<img src="../img/uploads/stopwatch.jpg" />
+			<img src="../../img/uploads/stopwatch.jpg" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://codepen.io/Drew7865/pen/jvGVdg">Check out this app!</a>
@@ -65,7 +65,7 @@ author: Andrew Rogala
 	</div>
 	<div class="featuredwork__8">
 		<div class="featuredwork__imgbox" tabindex="0">
-			<img src="../img/uploads/customhomepage.png" />
+			<img src="../../img/uploads/customhomepage.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://github.com/ARogala/PersonalHomePage">Check out this app on GitHub!</a>

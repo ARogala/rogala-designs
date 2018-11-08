@@ -1,5 +1,5 @@
 ---
-path: src/featuredwork/
+path: src/markdown/featuredwork/
 title: Featured Work
 date: 2018-11-01T00:00:00.000Z
 author: Andrew Rogala
@@ -9,7 +9,7 @@ author: Andrew Rogala
 	<div class="featuredwork__1">
 		<div class="featuredwork__imgbox" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
-			<img src="../img/uploads/csfeedy.png" />
+			<img src="../../img/uploads/csfeedy.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://csfeedy.surge.sh">Check out this app!</a>
@@ -38,7 +38,7 @@ author: Andrew Rogala
     <div class="featuredwork__2">
 		<div class="featuredwork__imgbox" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
-			<img src="../img/uploads/favplaces.png" />
+			<img src="../../img/uploads/favplaces.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://arogala.github.io/FavoritePlacesMap/">Check out this app!</a>
@@ -61,7 +61,7 @@ author: Andrew Rogala
 	<div class="featuredwork__3">
 		<div class="featuredwork__imgbox" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
-			<img src="../img/uploads/YBArt.png" />
+			<img src="../../img/uploads/YBArt.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://yankandbritart.com/">Check out this web site!</a>

@@ -6,7 +6,7 @@
 
     color: white;
 
-	height: 40vh;
+	height: 30vh;
 
     &__title-1 {
     	text-align: center;
@@ -19,36 +19,10 @@
     }
 }
 
-@media screen and (min-width: 751px) {
-	.header {
-	 	-webkit-clip-path: ellipse(100% 50% at 51% 50%);
-		clip-path: ellipse(100% 50% at 51% 40%);
-
-		// -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-		// clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-	}
-}
-
-@media screen and (max-width: 750px) {
-	.header {
-		&__titleBox {
-  			transform: translateY(60%);
-		}
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.header {
-		&__titleBox {
-  			transform: translateY(40%);
-		}
-	}
-}
-
 .container {
 	display: flex;
 	flex-direction: column;
-	height: 60vh;
+	height: 70vh;
 }
 
 .main {
@@ -118,6 +92,42 @@
 
         transform: scale3d(1,1,1);
     }
+}
+
+@media screen and (max-height: 630px) {
+	.header {
+		height: 40vh;
+	}
+
+	.container {
+		height: 60vh;
+	}
+}
+
+@media screen and (min-width: 751px) {
+	.header {
+	 	-webkit-clip-path: ellipse(100% 50% at 51% 50%);
+		clip-path: ellipse(100% 50% at 51% 40%);
+
+		// -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+		// clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.header {
+		&__titleBox {
+  			transform: translateY(60%);
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.header {
+		&__titleBox {
+  			transform: translateY(50%);
+		}
+	}
 }
 
 @media screen and (min-width: 750px) {

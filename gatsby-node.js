@@ -53,7 +53,7 @@ exports.createPages = ({ graphql, actions }) => {
 			graphql(
 				`
 					{
-						allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } filter: { frontmatter: { category: {ne: null}}}) {
+						posts: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } filter: { frontmatter: { category: {ne: null}}}) {
 							edges {
 								node {
 									fields {
@@ -74,7 +74,7 @@ exports.createPages = ({ graphql, actions }) => {
 				}
 
 				// Create blog posts pages.
-				const posts = result.data.allMarkdownRemark.edges;
+				const posts = result.data.posts.edges;
 				posts.forEach(({node}, index) => {
 				const previous = index === posts.length - 1 ? null : posts[index + 1].node;
           		const next = index === 0 ? null : posts[index - 1].node;
@@ -90,8 +90,48 @@ exports.createPages = ({ graphql, actions }) => {
 						}
 					});
 				});
+
+				/* Create techblog pages
+				create enough pages to fit all posts (10posts / 2 postsPerPage) for 5 pages
+				limit the graphql query to postsPerPage
+				Skip the graphql query to the posts on that given page
+				*/
+				const postsPerPage = 10;
+        		const numPages = Math.ceil(posts.length / postsPerPage);
+				Array.from({length: numPages }).forEach((_, index) => {
+					createPage({
+						path: index === 0 ? `/techblog` : `/techblog/${index + 1}`,
+						component: path.resolve('./src/templates/blog-list.js'),
+						context: {
+							limit: postsPerPage,
+							skip: index*postsPerPage,
+							numPages,
+							currentPage: index + 1
+						}
+					});
+				});
 			})
 		);
 	});
 }
 
+ /*
+ 	https://stackoverflow.com/questions/40528557/how-does-array-fromlength-5-v-k-k-work
+
+	_ is a valid variable identifier
+
+	Below is a clever trick to get forEach to run X number of times without actually useing
+	an array.
+	Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.
+	JavaScript uses ducktyping which basically means that Array.from() will not actully check
+	if what it is passed is indeed an array object only that it has a property length "like an
+	array has" and then creates a real array with length of X
+
+	now just pass a dummyVar into forEach so it will run X times
+
+*/
+
+// Array.from({length: 4}).forEach((dummyVar, index) => {
+// 	console.log(index);
+// 	console.log(dummyVar);
+// });

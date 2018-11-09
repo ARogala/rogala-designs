@@ -38,7 +38,7 @@ function yourLoop() {
 //call the timeYourLoop() function to start the loop process
 timeYourLoop();
 
-console.log('i is defined at the top level of the program ' + i);
+console.log('i is defined at the top level of the program. i = ' + i);
 ```
 Ok so what is going on here? The short and sweet answer is that
 timeYourLoop() calls yourLoop() on a 2 second delay. yourLoop() runs the needed code and calls timeYourLoop() again if the condition is met.
@@ -50,7 +50,7 @@ to what is happening in the code. Please check out the other solutions on
 [stackoverflow](https://stackoverflow.com/questions/3583724/how-do-i-add-a-delay-in-a-javascript-loop)
 and pick the best one for your needs.<br/><br/>
 
-Now for best practices and more concise solution it would be a wise idea to encapsulate this code in an IIFE (Immediately Invoked Function Expression). This keeps the variable `i` in the function block which it was defined and avoids declaring `i` at the top level of the program.
+Now for best practices and a more concise solution it would be a wise idea to encapsulate this code in an IIFE (Immediately Invoked Function Expression). This keeps the variable `i` in the function block which it was defined and avoids declaring `javascript>i` at the top level of the program.
 
 ```js{numberLines: true}
 (function timedLoop(i) {

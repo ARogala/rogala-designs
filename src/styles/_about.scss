@@ -2,9 +2,80 @@
 
 .avatarbox {
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 .avatar {
 	width: 150px;
 	height: 150px;
 }
+
+.skills {
+
+	&__tip {
+		text-align: center;
+		font-weight: bold;
+	}
+
+	&__levelbox {
+		display: flex;
+		justify-content: center;
+  		align-items: center;
+		padding: 5px;
+	}
+
+	&__level {
+		width: 15%;
+		height: 45px;
+		text-align: center;
+		line-height: 45px;
+	}
+
+	&__level span {
+		display: inline-block;
+  		vertical-align: middle;
+ 		line-height: normal;
+
+		font-size: 1rem;
+
+		transform: rotate(50deg);
+		padding-top: 40px;
+	}
+
+	&__imgbox {
+		display: flex;
+		justify-content: center;
+  		align-items: center;
+  		padding: 5px;
+	}
+
+	&__imgdiv {
+		width: 15%;
+		height: 45px;
+		text-align: center;
+		line-height: 45px;
+	}
+
+	&__imgdiv img {
+		height: 45px;
+	}
+
+	&__imgdiv span {
+		display: inline-block;
+  		vertical-align: middle;
+ 		line-height: normal;
+
+ 		font-size: 1rem;
+	}
+
+	&__btn:hover {
+		cursor: pointer;
+	}
+
+	&__btn:focus {
+		outline: 2px solid blue;
+		padding: 2px;
+	}
+
+}
+

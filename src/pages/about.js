@@ -101,12 +101,14 @@ function showStars(str) {
 				}
 			}
 			break;
+		default:
+			console.log('error parameter not matching case.');
 	}
 }
 
 function About({data}) {
 	//console.log(data.allMarkdownRemark.edges[0].node);
-	const content = data.allMarkdownRemark.edges[0].node;
+	//const content = data.allMarkdownRemark.edges[0].node;
 	return (
 		<Layout>
 			<div className="avatarbox">
@@ -118,81 +120,83 @@ function About({data}) {
 				my educational and work experience, and most importanly what drives me to
 				the exciting field of Web and Software Development!</p>
 			</div>
-			<div className="skills">
-				<p className="skills__tip">Click the icons to see my skill levels</p>
-				<div className="skills__levelbox">
-					<div className="skills__level"></div>
-					<div className="skills__level"><span>Beginner</span></div>
-					<div className="skills__level"><span>Novice</span></div>
-					<div className="skills__level"><span>Intermediate</span></div>
-					<div className="skills__level"><span>Advanced</span></div>
-					<div className="skills__level"><span>Expert</span></div>
+			<section>
+				<div className="skills">
+					<p className="skills__tip">Click the icons to see my skill levels</p>
+					<div className="skills__levelbox">
+						<div className="skills__level"></div>
+						<div className="skills__level"><span>Beginner</span></div>
+						<div className="skills__level"><span>Novice</span></div>
+						<div className="skills__level"><span>Intermediate</span></div>
+						<div className="skills__level"><span>Advanced</span></div>
+						<div className="skills__level"><span>Expert</span></div>
+					</div>
+					<div className="skills__imgbox">
+						<div className="skills__imgdiv"><img className="skills__btn" onClick={() => showStars('JS')} onKeyPress={() => showStars('JS')} src={JS} tabIndex="0" alt="JavaScript"/></div>
+						<div className="skills__imgdiv"><img className="skills__starJS" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img className="skills__starJS" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img className="skills__starJS" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img className="skills__starJS" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"></div>
+					</div>
+					<div className="skills__imgbox">
+						<div className="skills__imgdiv"><img className="skills__btn" onClick={() => showStars('CSS')} onKeyPress={() => showStars('CSS')} src={CSS} tabIndex="0" alt="CSS"/></div>
+						<div className="skills__imgdiv"><img className="skills__starCSS" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img className="skills__starCSS" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img className="skills__starCSS" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img className="skills__starCSS" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"></div>
+					</div>
+					<div className="skills__imgbox">
+						<div className="skills__imgdiv"><img className="skills__btn" onClick={() => showStars('SASS')} onKeyPress={() => showStars('SASS')} src={SASS} tabIndex="0" alt="SASS"/></div>
+						<div className="skills__imgdiv"><img className="skills__starSASS" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img className="skills__starSASS" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img className="skills__starSASS" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"></div>
+						<div className="skills__imgdiv"></div>
+					</div>
+					<div className="skills__imgbox">
+						<div className="skills__imgdiv"><img className="skills__btn" onClick={() => showStars('HTML')} onKeyPress={() => showStars('HTML')} src={HTML}  tabIndex="0" alt="HTML"/></div>
+						<div className="skills__imgdiv"><img className="skills__starHTML" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img className="skills__starHTML" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img className="skills__starHTML" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img className="skills__starHTML" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"></div>
+					</div>
+					<div className="skills__imgbox">
+						<div className="skills__imgdiv"><span className="skills__btn" onClick={() => showStars('REACT')} onKeyPress={() => showStars('REACT')} tabIndex="0">ReactJS</span></div>
+						<div className="skills__imgdiv"><img  className="skills__starREACT" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img  className="skills__starREACT" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img  className="skills__starREACT" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"></div>
+						<div className="skills__imgdiv"></div>
+					</div>
+					<div className="skills__imgbox">
+						<div className="skills__imgdiv"><span className="skills__btn" onClick={() => showStars('GATSBY')} onKeyPress={() => showStars('GATSBY')} tabIndex="0">GatsbyJS Static Site Generator</span></div>
+						<div className="skills__imgdiv"><img  className="skills__starGATSBY" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img  className="skills__starGATSBY" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img  className="skills__starGATSBY" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"></div>
+						<div className="skills__imgdiv"></div>
+					</div>
+					<div className="skills__imgbox">
+						<div className="skills__imgdiv"><span className="skills__btn" onClick={() => showStars('GIT')} onKeyPress={() => showStars('GIT')} tabIndex="0">Git and GitHub</span></div>
+						<div className="skills__imgdiv"><img  className="skills__starGIT" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img  className="skills__starGIT" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img  className="skills__starGIT" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"></div>
+						<div className="skills__imgdiv"></div>
+					</div>
+					<div className="skills__imgbox">
+						<div className="skills__imgdiv"><span className="skills__btn" onClick={() => showStars('LINUX')} onKeyPress={() => showStars('LINUX')} tabIndex="0">Linux OS</span></div>
+						<div className="skills__imgdiv"><img  className="skills__starLINUX" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img  className="skills__starLINUX" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"><img  className="skills__starLINUX" src={Star} alt="Star" style={{display:'none'}}/></div>
+						<div className="skills__imgdiv"></div>
+						<div className="skills__imgdiv"></div>
+					</div>
 				</div>
-				<div className="skills__imgbox">
-					<div className="skills__imgdiv"><img className="skills__btn" onClick={() => showStars('JS')} onKeyPress={() => showStars('JS')} src={JS} tabIndex="0" alt="JavaScript"/></div>
-					<div className="skills__imgdiv"><img className="skills__starJS" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img className="skills__starJS" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img className="skills__starJS" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img className="skills__starJS" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"></div>
-				</div>
-				<div className="skills__imgbox">
-					<div className="skills__imgdiv"><img className="skills__btn" onClick={() => showStars('CSS')} onKeyPress={() => showStars('CSS')} src={CSS} tabIndex="0" alt="CSS"/></div>
-					<div className="skills__imgdiv"><img className="skills__starCSS" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img className="skills__starCSS" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img className="skills__starCSS" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img className="skills__starCSS" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"></div>
-				</div>
-				<div className="skills__imgbox">
-					<div className="skills__imgdiv"><img className="skills__btn" onClick={() => showStars('SASS')} onKeyPress={() => showStars('SASS')} src={SASS} tabIndex="0" alt="SASS"/></div>
-					<div className="skills__imgdiv"><img className="skills__starSASS" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img className="skills__starSASS" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img className="skills__starSASS" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"></div>
-					<div className="skills__imgdiv"></div>
-				</div>
-				<div className="skills__imgbox">
-					<div className="skills__imgdiv"><img className="skills__btn" onClick={() => showStars('HTML')} onKeyPress={() => showStars('HTML')} src={HTML}  tabIndex="0" alt="HTML"/></div>
-					<div className="skills__imgdiv"><img className="skills__starHTML" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img className="skills__starHTML" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img className="skills__starHTML" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img className="skills__starHTML" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"></div>
-				</div>
-				<div className="skills__imgbox">
-					<div className="skills__imgdiv"><span className="skills__btn" onClick={() => showStars('REACT')} onKeyPress={() => showStars('REACT')} tabIndex="0">ReactJS</span></div>
-					<div className="skills__imgdiv"><img  className="skills__starREACT" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img  className="skills__starREACT" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img  className="skills__starREACT" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"></div>
-					<div className="skills__imgdiv"></div>
-				</div>
-				<div className="skills__imgbox">
-					<div className="skills__imgdiv"><span className="skills__btn" onClick={() => showStars('GATSBY')} onKeyPress={() => showStars('GATSBY')} tabIndex="0">GatsbyJS Static Site Generator</span></div>
-					<div className="skills__imgdiv"><img  className="skills__starGATSBY" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img  className="skills__starGATSBY" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img  className="skills__starGATSBY" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"></div>
-					<div className="skills__imgdiv"></div>
-				</div>
-				<div className="skills__imgbox">
-					<div className="skills__imgdiv"><span className="skills__btn" onClick={() => showStars('GIT')} onKeyPress={() => showStars('GIT')} tabIndex="0">Git and GitHub</span></div>
-					<div className="skills__imgdiv"><img  className="skills__starGIT" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img  className="skills__starGIT" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img  className="skills__starGIT" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"></div>
-					<div className="skills__imgdiv"></div>
-				</div>
-				<div className="skills__imgbox">
-					<div className="skills__imgdiv"><span className="skills__btn" onClick={() => showStars('LINUX')} onKeyPress={() => showStars('LINUX')} tabIndex="0">Linux OS</span></div>
-					<div className="skills__imgdiv"><img  className="skills__starLINUX" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img  className="skills__starLINUX" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"><img  className="skills__starLINUX" src={Star} alt="Star" style={{display:'none'}}/></div>
-					<div className="skills__imgdiv"></div>
-					<div className="skills__imgdiv"></div>
-				</div>
-			</div>
+			</section>
 		</Layout>
 	);
 }

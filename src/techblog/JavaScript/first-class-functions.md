@@ -55,6 +55,8 @@ returnedFunction();
 ```
 
 ## Store a function in a data structure 
+Here I store the function in a variable and then store that variable in 
+an array. This is basically just number one. However, I documented this because I find this interesting and have actually never thought about doing this before. 
 ```js{numberLines: true}
 
 storeInArray = function() {
@@ -65,4 +67,4 @@ let functionInArray = [storeInArray];
 
 functionInArray[0]();
 ```
-[read more here](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function)
+[read more on MDN](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function)

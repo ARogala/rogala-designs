@@ -20,8 +20,8 @@ class BlogList extends React.Component {
 					and enjoy the knowledge shared throughout the course of my career in
 					Front-End Web Development. The main topics covered will be JavaScript,
 					ReactJS, GatsbyJS, CSS, SASS, HTML, and anything else I may learn,
-					experiment with, or find interesting. This blog is also serving as my personal documentation
-					of the JavaScript language as well as any information and tutorials that
+					experiment with, or find interesting. This blog is also serving as my
+					personal documentation of any information and tutorials that
 					I feel will benefit "future me" when I inevitably forget how something works.
 					So, read on and hope you enjoy my notes, tips, and tricks of the trade!!</p>
 					<h2 className="techblog__recent">Recent Posts:</h2>

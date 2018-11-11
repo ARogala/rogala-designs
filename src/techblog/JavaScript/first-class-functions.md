@@ -56,7 +56,7 @@ returnedFunction();
 
 ## Store a function in a data structure 
 Here I store the function in a variable and then store that variable in 
-an array. This is basically just number one. However, I documented this because I find this interesting and have actually never thought about doing this before. 
+an array. This is basically just number one.
 ```js{numberLines: true}
 
 storeInArray = function() {

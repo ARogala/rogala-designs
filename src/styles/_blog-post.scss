@@ -3,7 +3,17 @@
 .blogpostContainer {
 	width: 90vw;
 	max-width: $max-width;
+
+  & ol {
+    margin-left: 20px;
+  }
+
+  & ul {
+    margin-left: 20px;
+  }
 }
+
+
 
 .gatsby-highlight {
 	border-radius: $border-radius-large;

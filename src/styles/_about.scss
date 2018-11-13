@@ -104,8 +104,19 @@
 		text-align: center;
 	}
 
+	& h4 {
+		// text-align: center;
+	}
+
 	&__img {
 		width: 100px;
 		height: 100px;
+	}
+}
+
+.about {
+	&__title {
+		text-align: center;
+		margin-top: 20px;
 	}
 }

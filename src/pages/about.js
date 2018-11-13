@@ -19,7 +19,7 @@ AOS.init();
 
 function About({data}) {
 	//console.log(data.allMarkdownRemark.edges[0].node);
-	//const content = data.allMarkdownRemark.edges[0].node;
+	const content = data.allMarkdownRemark.edges[0].node;
 	return (
 		<Layout>
 			<div className="avatarbox">
@@ -153,6 +153,12 @@ function About({data}) {
 					come in handy should I ever need to estimate the cost of
 					software engineering projects. I also worked to develop a learning curve
 					calculator in excel VBA to speed up calculations frequently done on the job.</p>
+				</div>
+			</section>
+			<section>
+				<div className="about" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+					<h3 className="about__title">Why I love Web Development</h3>
+					<div dangerouslySetInnerHTML={{ __html: content.html }}></div>
 				</div>
 			</section>
 		</Layout>

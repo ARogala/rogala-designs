@@ -72,6 +72,7 @@
 
 	&__title {
 		text-align: center;
+		margin-top: 20px;
 	}
 
 	&__imgdiv {
@@ -88,11 +89,23 @@
 		margin-left: 10px;
 	}
 
-	&__list span {
-		font-weight: bold;
-	}
-
 	&__subList {
 		margin-left: 30px;
+	}
+}
+
+.work {
+	&__title {
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	&__imgdiv {
+		text-align: center;
+	}
+
+	&__img {
+		width: 100px;
+		height: 100px;
 	}
 }

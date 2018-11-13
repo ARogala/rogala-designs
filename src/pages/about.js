@@ -10,6 +10,7 @@ import HTML from '../img/HTML.png';
 
 import Star from '../img/star.svg';
 import Cap from '../img/universityCap.svg';
+import Work from '../img/work.svg';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -112,14 +113,14 @@ function About({data}) {
 					<h3 className="education__title">Education</h3>
 					<div className="education__imgdiv"><img className="education__img" src={Cap} alt="graduation cap"/></div>
 					<ul className="education__list">
-						<li><span>Montclair State University</span>
+						<li><h4>Montclair State University</h4>
 							<ul className="education__subList" data-aos="slide-right" data-aos-delay="600">
 								<li>Bachelor Of Science</li>
 								<li>Mathematics: Concentration in Statistics</li>
 								<li>GPA: 3.98/4.0</li>
 							</ul>
 						</li>
-						<li><span>County College of Morris</span>
+						<li><h4>County College of Morris</h4>
 							<ul className="education__subList" data-aos="slide-right" data-aos-delay="600">
 								<li>Associate of Science</li>
 								<li>Engineering</li>
@@ -128,13 +129,30 @@ function About({data}) {
 						</li>
 					</ul>
 					<ul className="education__list">
-						<li><span>Notable Course Work</span>
+						<li><h4>Notable Course Work/Other Languages</h4>
 							<ul className="education__subList" data-aos="slide-right" data-aos-delay="600">
 								<li>OOP Java 1 - 2</li>
+								<li>Udacity Front End Nanodegree</li>
 								<li>Data Mining: R programming Language</li>
+								<li>Excel VBA</li>
 							</ul>
 						</li>
 					</ul>
+				</div>
+			</section>
+			<section>
+				<div className="work" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+					<h3 className="work__title">Relevant Work Experience</h3>
+					<div className="work__imgdiv"><img className="work__img" src={Work} alt=""/></div>
+					<h4>Cost Analyst - Picatinny Arsenal</h4>
+					<p>As a Cost Analyst at Picatinny Arsenal I worked with team members
+					and other stakeholders to develop life cycle cost estimates for
+					engineering projects. Communication, attention to detail,
+					problem solving, mathematics, and analysis are critical skills I
+					demonstrated in this position. This experience will undoubtedly
+					come in handy should I ever need to estimate the cost of
+					software engineering projects. I also worked to develop a learning curve
+					calculator in excel VBA to speed up calculations frequently done on the job.</p>
 				</div>
 			</section>
 		</Layout>

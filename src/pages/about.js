@@ -11,8 +11,8 @@ import HTML from '../img/HTML.png';
 import Star from '../img/star.svg';
 
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import 'aos/dist/aos.css';
+
 AOS.init();
 
 function About({data}) {
@@ -31,8 +31,8 @@ function About({data}) {
 			</div>
 			<section>
 				<div className="skills">
-					<p className="skills__tip">Click the icons to see my skill levels</p>
-					<div className="skills__levelbox" data-aos="slide-left">
+					<p className="skills__tip">Check out my skills</p>
+					<div className="skills__levelbox" data-aos="slide-left" data-aos-easing="ease-in-out-back">
 						<div className="skills__level"></div>
 						<div className="skills__level"><span>Beginner</span></div>
 						<div className="skills__level"><span>Novice</span></div>
@@ -40,70 +40,75 @@ function About({data}) {
 						<div className="skills__level"><span>Advanced</span></div>
 						<div className="skills__level"><span>Expert</span></div>
 					</div>
-					<div className="skills__imgbox" data-aos="slide-left">
+					<div className="skills__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back">
 						<div className="skills__imgdiv"><img src={JS}   alt="JavaScript"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
 					</div>
-					<div className="skills__imgbox" data-aos="slide-left">
+					<div className="skills__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back">
 						<div className="skills__imgdiv"><img src={CSS}  alt="CSS"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
 					</div>
-					<div className="skills__imgbox" data-aos="slide-left">
+					<div className="skills__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back">
 						<div className="skills__imgdiv"><img src={SASS} alt="SASS"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"></div>
-						<div className="skills__imgdiv"></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
 					</div>
-					<div className="skills__imgbox" data-aos="slide-left">
+					<div className="skills__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back">
 						<div className="skills__imgdiv"><img src={HTML} alt="HTML"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
 					</div>
-					<div className="skills__imgbox" data-aos="slide-left">
+					<div className="skills__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back">
 						<div className="skills__imgdiv"><span>ReactJS</span></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"></div>
-						<div className="skills__imgdiv"></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
 					</div>
-					<div className="skills__imgbox" data-aos="slide-left">
+					<div className="skills__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back">
 						<div className="skills__imgdiv"><span>GatsbyJS Static Site Generator</span></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"></div>
-						<div className="skills__imgdiv"></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
 					</div>
-					<div className="skills__imgbox" data-aos="slide-left">
+					<div className="skills__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back">
 						<div className="skills__imgdiv"><span>Git and GitHub</span></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"></div>
-						<div className="skills__imgdiv"></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
 					</div>
-					<div className="skills__imgbox" data-aos="slide-left">
+					<div className="skills__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back">
 						<div className="skills__imgdiv"><span>Linux OS</span></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"><img src={Star} alt="Star"/></div>
-						<div className="skills__imgdiv"></div>
-						<div className="skills__imgdiv"></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
+						<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
 					</div>
+				</div>
+			</section>
+			<section>
+				<div>
+
 				</div>
 			</section>
 		</Layout>

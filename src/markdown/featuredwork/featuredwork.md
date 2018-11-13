@@ -7,7 +7,7 @@ author: Andrew Rogala
 
 <section class="featuredwork">
 	<div class="featuredwork__1">
-		<div class="featuredwork__imgbox" tabindex="0">
+		<div class="featuredwork__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
 			<img src="../../img/uploads/csfeedy.png" />
 			<div class="featuredwork__imgbox-overlay">
@@ -36,7 +36,7 @@ author: Andrew Rogala
 		<a href="https://github.com/ARogala/cs-feedy">View CSFeedy on GitHub</a></p>
 	</div>
     <div class="featuredwork__2">
-		<div class="featuredwork__imgbox" tabindex="0">
+		<div class="featuredwork__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
 			<img src="../../img/uploads/favplaces.png" />
 			<div class="featuredwork__imgbox-overlay">
@@ -59,7 +59,7 @@ author: Andrew Rogala
         <a href="https://github.com/ARogala/FavoritePlacesMap">View Favorite Places on GitHub</a></p>
 	</div>
 	<div class="featuredwork__3">
-		<div class="featuredwork__imgbox" tabindex="0">
+		<div class="featuredwork__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
 			<img src="../../img/uploads/YBArt.png" />
 			<div class="featuredwork__imgbox-overlay">

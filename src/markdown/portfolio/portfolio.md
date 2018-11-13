@@ -6,7 +6,7 @@ author: Andrew Rogala
 ---
 <section class="featuredwork">
 	<div class="featuredwork__4">
-		<div class="featuredwork__imgbox" tabindex="0">
+		<div class="featuredwork__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/frogger.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
@@ -22,7 +22,7 @@ author: Andrew Rogala
 	    <a href="https://github.com/ARogala/Frogger">View Frogger Clone on GitHub</a></p>
 	</div>
 	<div class="featuredwork__5">
-		<div class="featuredwork__imgbox" tabindex="0">
+		<div class="featuredwork__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/memorygame.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
@@ -36,7 +36,7 @@ author: Andrew Rogala
 	    <a href="https://github.com/ARogala/fend-project-memory-game">View Memory Game on GitHub</a></p>
 	</div>
 	<div class="featuredwork__6">
-		<div class="featuredwork__imgbox" tabindex="0">
+		<div class="featuredwork__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/timer.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
@@ -50,7 +50,7 @@ author: Andrew Rogala
 	    <a href="https://github.com/ARogala/Timer">View timer on GitHub</a></p>
 	</div>
 	<div class="featuredwork__7">
-		<div class="featuredwork__imgbox" tabindex="0">
+		<div class="featuredwork__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/stopwatch.jpg" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
@@ -64,7 +64,7 @@ author: Andrew Rogala
 	    <a href="https://github.com/ARogala/StopWatch">View Stop Watch on GitHub</a></p>
 	</div>
 	<div class="featuredwork__8">
-		<div class="featuredwork__imgbox" tabindex="0">
+		<div class="featuredwork__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/customhomepage.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">

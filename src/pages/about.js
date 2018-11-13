@@ -127,6 +127,14 @@ function About({data}) {
 							</ul>
 						</li>
 					</ul>
+					<ul className="education__list">
+						<li><span>Notable Course Work</span>
+							<ul className="education__subList" data-aos="slide-right" data-aos-delay="600">
+								<li>OOP Java 1 - 2</li>
+								<li>Data Mining: R programming Language</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
 			</section>
 		</Layout>

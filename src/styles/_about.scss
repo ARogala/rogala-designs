@@ -12,9 +12,8 @@
 
 .skills {
 	overflow: hidden;
-	&__tip {
+	&__title {
 		text-align: center;
-		font-weight: bold;
 	}
 
 	&__levelbox {
@@ -66,5 +65,34 @@
  		line-height: normal;
 
  		font-size: 1rem;
+	}
+}
+
+.education {
+
+	&__title {
+		text-align: center;
+	}
+
+	&__imgdiv {
+		text-align: center;
+	}
+
+	&__img {
+		width: 100px;
+		height: 100px;
+	}
+
+	&__list {
+		list-style: none;
+		margin-left: 10px;
+	}
+
+	&__list span {
+		font-weight: bold;
+	}
+
+	&__subList {
+		margin-left: 30px;
 	}
 }

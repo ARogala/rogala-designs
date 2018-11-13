@@ -9,6 +9,7 @@ import SASS from '../img/sass.svg';
 import HTML from '../img/HTML.png';
 
 import Star from '../img/star.svg';
+import Cap from '../img/universityCap.svg';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -31,7 +32,7 @@ function About({data}) {
 			</div>
 			<section>
 				<div className="skills">
-					<p className="skills__tip">Check out my skills</p>
+					<h3 className="skills__title">Skills</h3>
 					<div className="skills__levelbox" data-aos="slide-left" data-aos-easing="ease-in-out-back">
 						<div className="skills__level"></div>
 						<div className="skills__level"><span>Beginner</span></div>
@@ -107,8 +108,25 @@ function About({data}) {
 				</div>
 			</section>
 			<section>
-				<div>
-
+				<div className="education" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+					<h3 className="education__title">Education</h3>
+					<div className="education__imgdiv"><img className="education__img" src={Cap} alt="graduation cap"/></div>
+					<ul className="education__list">
+						<li><span>Montclair State University</span>
+							<ul className="education__subList" data-aos="slide-right" data-aos-delay="600">
+								<li>Bachelor Of Science</li>
+								<li>Mathematics: Concentration in Statistics</li>
+								<li>GPA: 3.98/4.0</li>
+							</ul>
+						</li>
+						<li><span>County College of Morris</span>
+							<ul className="education__subList" data-aos="slide-right" data-aos-delay="600">
+								<li>Associate of Science</li>
+								<li>Engineering</li>
+								<li>GPA: 3.6/4.0</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
 			</section>
 		</Layout>

@@ -8,6 +8,7 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "escape-string-regexp": "^1.0.5",
     "gatsby": "^2.0.31",
     "gatsby-plugin-netlify-cms": "^3.0.5",

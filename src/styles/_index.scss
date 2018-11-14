@@ -91,7 +91,19 @@
 		opacity: .8;
 	}
 
+	// focus within polyfill
+	&__imgbox[focus-within] &__imgbox-overlay {
+		transform: rotateY(0);
+		opacity: .8;
+	}
+
 	&__imgbox:focus-within .gatsby-resp-image-wrapper {
+		transform: rotateY(0);
+		opacity: .4;
+	}
+
+	//focus within polyfill
+	&__imgbox[focus-within] .gatsby-resp-image-wrapper {
 		transform: rotateY(0);
 		opacity: .4;
 	}

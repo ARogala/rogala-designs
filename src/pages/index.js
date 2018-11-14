@@ -11,6 +11,11 @@ class Home extends React.Component {
 
 		this.aos = AOS;
 		this.aos.init();
+
+		const isDoc = typeof document !== 'undefined';
+		const focusWithin = isDoc ? require('focus-within') : undefined;
+		//console.log(focusWithin.default);
+		focusWithin.default(document);
 	}
 
 	componentDidUpdate() {

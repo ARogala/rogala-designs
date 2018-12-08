@@ -39,4 +39,16 @@ console.log('Sorted Numbers', bubbleSort(numbers));
 console.log('Unmutated Numbers',numbers);
 
 ```
+## This could be done with JavaScripts sort() function
+```js{numberLines: true}
+let numbers = [23, 71, 33, 82, 1];
+function sortNumbers(numbers){
+	let sortNumbers;
+	sortNumbers = numbers.concat().sort(function(a, b){return a - b; });
+	return sortNumbers;
+};
 
+console.log('Numbers',numbers);
+console.log('Sorted Numbers', sortNumbers(numbers));
+console.log('Unmutated Numbers',numbers);
+```

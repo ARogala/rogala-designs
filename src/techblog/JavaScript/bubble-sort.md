@@ -12,7 +12,31 @@ Bubble sort works by repeatedly passing through the array, checking the adjacent
 
 ## Bubble Sort
 ```js{numberLines: true}
+let numbers = [23, 71, 33, 82, 1];
+function bubbleSort(numbers) {
+	let length = numbers.length;
+	let temp;
+	let swap;
+	let sum;
+	let sortNumbers = [...numbers];
 
+	do {
+		swap = false;
+		for(let i = 0; i < length - 1; i++) {
+			if(sortNumbers[i] > sortNumbers[i+1]) {
+				temp = sortNumbers[i];
+				sortNumbers[i] = sortNumbers[i+1];
+				sortNumbers[i+1] = temp;
+				swap = true;
+			}
+		}
+	} while(swap === true);
+	return sortNumbers;
+}
+
+console.log('Numbers',numbers);
+console.log('Sorted Numbers', bubbleSort(numbers));
+console.log('Unmutated Numbers',numbers);
 
 ```
 

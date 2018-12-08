@@ -48,7 +48,7 @@ function sortNumbers(numbers){
 	return sortNumbers;
 };
 
-console.log('Numbers',numbers);
+console.log('Numbers', numbers);
 console.log('Sorted Numbers', sortNumbers(numbers));
-console.log('Unmutated Numbers',numbers);
+console.log('Unmutated Numbers', numbers);
 ```

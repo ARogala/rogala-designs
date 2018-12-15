@@ -4,6 +4,7 @@ backend:
 
 media_folder: src/img/uploads
 public_folder: img/uploads
+publish_mode: editorial_workflow
 
 display_url: https://rogala-designs.netlify.com
 

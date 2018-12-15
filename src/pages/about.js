@@ -93,6 +93,14 @@ class About extends React.Component {
 							<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
 						</div>
 						<div className="skills__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back">
+							<div className="skills__imgdiv"><span>Redux</span></div>
+							<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+							<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+							<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
+							<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
+							<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"></div>
+						</div>
+						<div className="skills__imgbox" data-aos="slide-left" data-aos-easing="ease-in-out-back">
 							<div className="skills__imgdiv"><span>GatsbyJS Static Site Generator</span></div>
 							<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>
 							<div className="skills__imgdiv" data-aos="slide-left" data-aos-delay="350" data-aos-easing="ease-in-out-back"><img src={Star} alt="Star"/></div>

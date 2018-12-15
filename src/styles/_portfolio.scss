@@ -25,6 +25,11 @@
 		padding-top: 20px;
 		margin-bottom: 20px;
 	}
+
+	&__9 {
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (min-width: 750px) {
@@ -67,9 +72,27 @@
 		}
 
 		&__8 {
-			width: 60%;
+			width: 45%;
 			margin: 0px auto 20px auto;
 		}
+
+		&__8 &__imgbox {
+			height: 300px;
+		}
+
+		&__9 {
+			width: 45%;
+			margin: 0px auto 20px auto;
+		}
+
+		&__9 &__imgbox {
+			height: 300px;
+		}
+
+		// &__10 {
+		// 	width: 60%;
+		// 	margin: 0px auto 20px auto;
+		// }
 	}
 }
 

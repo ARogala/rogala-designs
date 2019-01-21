@@ -64,14 +64,14 @@ author: Andrew Rogala
 			<img src="../../img/uploads/YBArt.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
-					<a class="featuredwork__imgbox-overlay--link" href="https://yankandbritart.com/">Check out this web site!</a>
+					<a class="featuredwork__imgbox-overlay--link" href="https://yankandbritart.net/">Check out this web site!</a>
 				</div>
 			</div>
 		</div>
 		<p class="featuredwork__tip">Hover over the image and click link to visit the site</p>
 		<h3 class="heading-tertiary">Yank and Brit Art</h3>
-		<p class="featuredwork__description-p">Yank and Brit Art is a custom designed art blog site; just established in 2018. This site was build on top of the WordPress content management system and the custom theme was developed with the help of Twitter Bootstrap. I developed this custom blog to help my wife, Katie, showcase her talented art work for her Etsy shop. We both enjoyed the design process and hope you enjoy browsing through the site. More content coming soon.</p><br/>
-		<p class="featuredwork__description-p">Full redesign with eCommerce comming soon!</p>
+		<p class="featuredwork__description-p">Yank and Brit Art is a custom designed art blog site; just established in 2018. This JAM Stack blog is build with GatsbyJS. I developed this custom blog to help my wife, Katie, showcase her talented art work for her Etsy shop. We both enjoyed the design process and hope you enjoy browsing through the site. More content coming soon.</p><br/>
+		<a href="https://github.com/ARogala/yank-and-brit-art">View code on GitHub</a></p>
 	</div>
 </section>
 

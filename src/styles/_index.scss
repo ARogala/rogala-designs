@@ -51,6 +51,11 @@
 		margin-bottom: 20px;
 	}
 
+	&__4 {
+		padding-top: 10px;
+		margin-bottom: 20px;
+	}
+
 	&__imgbox {
 		position: relative;
 		width: 90vw;
@@ -194,9 +199,27 @@
 		}
 
 		&__3 {
-			width: 60%;
+			width: 45%;
 			margin: 0px auto 20px auto;
 		}
+
+		&__3 &__imgbox {
+			height: 250px;
+		}
+
+		&__4 {
+			width: 45%;
+			margin: 0px auto 20px auto;
+		}
+
+		&__4 &__imgbox {
+			height: 250px;
+		}
+
+		// &__5 {
+		// 	width: 60%;
+		// 	margin: 0px auto 20px auto;
+		// }
 
 		&__imgbox {
 			width: 100%;

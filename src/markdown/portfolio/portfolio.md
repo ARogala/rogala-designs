@@ -5,35 +5,28 @@ date: 2018-11-02
 author: Andrew Rogala
 ---
 <section class="featuredwork">
-	<div class="featuredwork__4">
-		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
-			<img src="../../img/uploads/frogger.png" />
-			<div class="featuredwork__imgbox-overlay">
-				<div class="featuredwork__imgbox-overlay--text">
-					<a class="featuredwork__imgbox-overlay--link" href="https://andrewrogalafrogger.surge.sh">Check out this app!</a>
-				</div>
-			</div>
-		</div>
-		<p class="featuredwork__tip">Hover over the image and click link to visit the app</p>
-		<h3 class="heading-tertiary">Frogger Clone</h3>
-		<p class="featuredwork__description-p">Zombie Squash was originally coded for Udacity's Front End Nano-degree program. It demonstrates use of object-oriented programming in JavaScript. I had a lot of fun building this game and, in the process, even learned a bit about basic game engine design.</p><br/>
-		<p class="featuredwork__description-p">In order to sharpen my skills and make the project uniquely mine, I added lots of addition features that were not part of the original specification. Some of the extra features include: multiple types of enemies, sound effects, music, and a bigger tile board!!</p><br/>
-		<p class="featuredwork__description-p">Use the arrow or wasd keys to move your player safely across the board and eat some brains!! Sorry NO mobile phone support for this game. The code and full list of game play rules are available on GitHub.<br/>
-	    <a href="https://github.com/ARogala/Frogger">View Frogger Clone on GitHub</a></p>
-	</div>
 	<div class="featuredwork__5">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
-			<img src="../../img/uploads/memorygame.png" />
+			<!-- gatsby adds alt text and class names to img -->
+			<img src="../../img/uploads/favplaces.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
-					<a class="featuredwork__imgbox-overlay--link" href="https://andrewrogalamemorygame.surge.sh">Check out this app!</a>
+					<a class="featuredwork__imgbox-overlay--link" href="https://arogala.github.io/FavoritePlacesMap/">Check out this app!</a>
 				</div>
 			</div>
 		</div>
 		<p class="featuredwork__tip">Hover over the image and click link to visit the app</p>
-		<h3 class="heading-tertiary">Memory Game</h3>
-		<p class="featuredwork__description-p">The memory game was built for Udacity's Front End Nano-degree program. I made sure to go beyond the basic requirements and added a settings page to change the tile and color theme around. The game was fun to build and works well on both desktop and mobile devices. I play it from time to time and my nieces love it. Hope you enjoy it as well.<br/>
-	    <a href="https://github.com/ARogala/fend-project-memory-game">View Memory Game on GitHub</a></p>
+		<h3 class="heading-tertiary">Favorite Places Map</h3>
+		<p class="featuredwork__description-p">My Favorite Places Map was built for Udacity's Front End Nano-degree program.
+        Of course, I went above and beyond the original specifications. This project was built with React, Google Maps JavaScript API,
+        and the Foursquare Places API.</p><br/>
+		<p class="featuredwork__description-p">This app features a filterable list containing some of my favorite locations.
+        Each location is displayed as a marker on the map, and clicking the marker displays an information window about the location.
+        Each information window contains a link to the locations Foursquare page, a link to search the location on Google Maps,
+        the locations address, and a street view of the location.</p><br/>
+		<p class="featuredwork__description-p">I hope you enjoy this app as much as I enjoyed making it.
+        In the future I plan to make this a map share application where you can share your favorite places with friends and family.<br/>
+        <a href="https://github.com/ARogala/FavoritePlacesMap">View Favorite Places on GitHub</a></p>
 	</div>
 	<div class="featuredwork__6">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
@@ -51,6 +44,36 @@ author: Andrew Rogala
 	</div>
 	<div class="featuredwork__7">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
+			<img src="../../img/uploads/frogger.png" />
+			<div class="featuredwork__imgbox-overlay">
+				<div class="featuredwork__imgbox-overlay--text">
+					<a class="featuredwork__imgbox-overlay--link" href="https://andrewrogalafrogger.surge.sh">Check out this app!</a>
+				</div>
+			</div>
+		</div>
+		<p class="featuredwork__tip">Hover over the image and click link to visit the app</p>
+		<h3 class="heading-tertiary">Frogger Clone</h3>
+		<p class="featuredwork__description-p">Zombie Squash was originally coded for Udacity's Front End Nano-degree program. It demonstrates use of object-oriented programming in JavaScript. I had a lot of fun building this game and, in the process, even learned a bit about basic game engine design.</p><br/>
+		<p class="featuredwork__description-p">In order to sharpen my skills and make the project uniquely mine, I added lots of addition features that were not part of the original specification. Some of the extra features include: multiple types of enemies, sound effects, music, and a bigger tile board!!</p><br/>
+		<p class="featuredwork__description-p">Use the arrow or wasd keys to move your player safely across the board and eat some brains!! Sorry NO mobile phone support for this game. The code and full list of game play rules are available on GitHub.<br/>
+	    <a href="https://github.com/ARogala/Frogger">View Frogger Clone on GitHub</a></p>
+	</div>
+	<div class="featuredwork__8">
+		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
+			<img src="../../img/uploads/memorygame.png" />
+			<div class="featuredwork__imgbox-overlay">
+				<div class="featuredwork__imgbox-overlay--text">
+					<a class="featuredwork__imgbox-overlay--link" href="https://andrewrogalamemorygame.surge.sh">Check out this app!</a>
+				</div>
+			</div>
+		</div>
+		<p class="featuredwork__tip">Hover over the image and click link to visit the app</p>
+		<h3 class="heading-tertiary">Memory Game</h3>
+		<p class="featuredwork__description-p">The memory game was built for Udacity's Front End Nano-degree program. I made sure to go beyond the basic requirements and added a settings page to change the tile and color theme around. The game was fun to build and works well on both desktop and mobile devices. I play it from time to time and my nieces love it. Hope you enjoy it as well.<br/>
+	    <a href="https://github.com/ARogala/fend-project-memory-game">View Memory Game on GitHub</a></p>
+	</div>
+	<div class="featuredwork__9">
+		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/timer.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
@@ -63,7 +86,7 @@ author: Andrew Rogala
 		<p class="featuredwork__description-p">I wrote this timer to demonstrate knowledge of the JavaScript language. Specifically, this timer has been coded with the modular design pattern and makes use of DOM manipulation in vanilla JavaScript. The algorithm was interesting and fun to figure out. Unfortunately, on mobile when the phone goes to sleep the script stops thus causing the timer to lose its accuracy. I am looking into a fix for this.<br/>
 	    <a href="https://github.com/ARogala/Timer">View timer on GitHub</a></p>
 	</div>
-	<div class="featuredwork__8">
+	<div class="featuredwork__10">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/stopwatch.jpg" />
 			<div class="featuredwork__imgbox-overlay">
@@ -77,7 +100,7 @@ author: Andrew Rogala
 		<p class="featuredwork__description-p">I wrote this stop watch to demonstrate knowledge of the JavaScript language. This stop watch has been coded with the modular design pattern and makes use of DOM manipulation in vanilla JavaScript. I spent a fair about of time on this code and tried my best to make the code clean and well commented. I have integrated this code into both of my games and hope you can make use of it too. Similar to the timer the algorithm was challenging, interesting, and fun. I may rewrite both of these as React components.<br/>
 	    <a href="https://github.com/ARogala/StopWatch">View Stop Watch on GitHub</a></p>
 	</div>
-	<div class="featuredwork__9">
+	<div class="featuredwork__11">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/customhomepage.png" />
 			<div class="featuredwork__imgbox-overlay">

@@ -35,28 +35,19 @@ author: Andrew Rogala
 		Also, feel free to check out the code for this application on its GitHub page.<br/>
 		<a href="https://github.com/ARogala/cs-feedy">View CSFeedy on GitHub</a></p>
 	</div>
-    <div class="featuredwork__2">
+	<div class="featuredwork__2">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
-			<img src="../../img/uploads/favplaces.png" />
+			<img src="../../img/uploads/PK.png" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
-					<a class="featuredwork__imgbox-overlay--link" href="https://arogala.github.io/FavoritePlacesMap/">Check out this app!</a>
+					<a class="featuredwork__imgbox-overlay--link" href="http://www.pksausage.com/">Check out this web site!</a>
 				</div>
 			</div>
 		</div>
-		<p class="featuredwork__tip">Hover over the image and click link to visit the app</p>
-		<h3 class="heading-tertiary">Favorite Places Map</h3>
-		<p class="featuredwork__description-p">My Favorite Places Map was built for Udacity's Front End Nano-degree program.
-        Of course, I went above and beyond the original specifications. This project was built with React, Google Maps JavaScript API,
-        and the Foursquare Places API.</p><br/>
-		<p class="featuredwork__description-p">This app features a filterable list containing some of my favorite locations.
-        Each location is displayed as a marker on the map, and clicking the marker displays an information window about the location.
-        Each information window contains a link to the locations Foursquare page, a link to search the location on Google Maps,
-        the locations address, and a street view of the location.</p><br/>
-		<p class="featuredwork__description-p">I hope you enjoy this app as much as I enjoyed making it.
-        In the future I plan to make this a map share application where you can share your favorite places with friends and family.<br/>
-        <a href="https://github.com/ARogala/FavoritePlacesMap">View Favorite Places on GitHub</a></p>
+		<p class="featuredwork__tip">Hover over the image and click link to visit the site</p>
+		<h3 class="heading-tertiary">Pork King Sausage, Inc.</h3>
+		<p class="featuredwork__description-p">Excited to display the first site I built for a client. This business landing page is built with GatsbyJS. I enjoyed working with the Pork King Sausage team to improve their online presence and am grateful to have my first happy customer!</p><br/>
 	</div>
 	<div class="featuredwork__3">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
@@ -70,8 +61,24 @@ author: Andrew Rogala
 		</div>
 		<p class="featuredwork__tip">Hover over the image and click link to visit the site</p>
 		<h3 class="heading-tertiary">Yank and Brit Art</h3>
-		<p class="featuredwork__description-p">Yank and Brit Art is a custom designed art blog site; just established in 2018. This JAM Stack blog is build with GatsbyJS. I developed this custom blog to help my wife, Katie, showcase her talented art work for her Etsy shop. We both enjoyed the design process and hope you enjoy browsing through the site. More content coming soon.</p><br/>
+		<p class="featuredwork__description-p">Yank and Brit Art is a custom designed art blog site; just established in 2018. This JAM Stack blog is build with GatsbyJS. I developed this custom blog to help my wife, Katie, showcase her talented art work for her Etsy shop. We both enjoyed the design process and hope you enjoy browsing through the site. More content coming soon.<br/>
 		<a href="https://github.com/ARogala/yank-and-brit-art">View code on GitHub</a></p>
+	</div>
+	<div class="featuredwork__4">
+		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
+			<!-- gatsby adds alt text and class names to img -->
+			<img src="../../img/uploads/myhomepage.png" />
+			<div class="featuredwork__imgbox-overlay">
+				<div class="featuredwork__imgbox-overlay--text">
+					<a class="featuredwork__imgbox-overlay--link" href="https://myhomepage.surge.sh/">Check out this app!</a>
+				</div>
+			</div>
+		</div>
+		<p class="featuredwork__tip">Hover over the image and click link to visit the app</p>
+		<h3 class="heading-tertiary">Custom Home Page</h3>
+		<p class="featuredwork__description-p">The Custom Home Page program is a single page web app built with React, Redux, and the <a href="https://openweathermap.org/">OpenWeatherMap API</a>. Building this app was fun! Some challenging aspects were: <a href="https://css-tricks.com/debouncing-throttling-explained-examples/">API request throttling</a>, and the functionality to change background image categories and select a personalized set of quick link icons.</p><br/>
+		<p class="featuredwork__description-p">Features include: three search bars, slide show, a custom clock with date, weather, and popular icon links. This is a redo of the first piece of code I posted on GitHub and I have learned a lot since then.<br/>
+		<a href="https://github.com/ARogala/custom-home-page">View code on GitHub</a></p>
 	</div>
 </section>
 

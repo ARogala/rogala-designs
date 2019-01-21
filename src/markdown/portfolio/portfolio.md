@@ -8,7 +8,7 @@ author: Andrew Rogala
 	<div class="featuredwork__5">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
-			<img src="../../img/uploads/favplaces.png" />
+			<img src="../../img/uploads/favplaces.jpg" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://arogala.github.io/FavoritePlacesMap/">Check out this app!</a>
@@ -30,7 +30,7 @@ author: Andrew Rogala
 	</div>
 	<div class="featuredwork__6">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
-			<img src="../../img/uploads/listBuddy.png" />
+			<img src="../../img/uploads/listBuddy.jpg" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://listbuddy.surge.sh/">Check out this app!</a>
@@ -44,7 +44,7 @@ author: Andrew Rogala
 	</div>
 	<div class="featuredwork__7">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
-			<img src="../../img/uploads/frogger.png" />
+			<img src="../../img/uploads/frogger.jpg" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://andrewrogalafrogger.surge.sh">Check out this app!</a>
@@ -60,7 +60,7 @@ author: Andrew Rogala
 	</div>
 	<div class="featuredwork__8">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
-			<img src="../../img/uploads/memorygame.png" />
+			<img src="../../img/uploads/memorygame.jpg" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://andrewrogalamemorygame.surge.sh">Check out this app!</a>
@@ -74,7 +74,7 @@ author: Andrew Rogala
 	</div>
 	<div class="featuredwork__9">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
-			<img src="../../img/uploads/timer.png" />
+			<img src="../../img/uploads/timer.jpg" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://arogalatimer.surge.sh">Check out this app!</a>
@@ -102,7 +102,7 @@ author: Andrew Rogala
 	</div>
 	<div class="featuredwork__11">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
-			<img src="../../img/uploads/customhomepage.png" />
+			<img src="../../img/uploads/customhomepage.jpg" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://github.com/ARogala/PersonalHomePage">Check out this app on GitHub!</a>

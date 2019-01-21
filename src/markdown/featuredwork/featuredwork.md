@@ -9,7 +9,7 @@ author: Andrew Rogala
 	<div class="featuredwork__1">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
-			<img src="../../img/uploads/csfeedy.png" />
+			<img src="../../img/uploads/csfeedy.jpg" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://csfeedy.surge.sh">Check out this app!</a>
@@ -38,7 +38,7 @@ author: Andrew Rogala
 	<div class="featuredwork__2">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
-			<img src="../../img/uploads/PK.png" />
+			<img src="../../img/uploads/PK.jpg" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="http://www.pksausage.com/">Check out this web site!</a>
@@ -52,7 +52,7 @@ author: Andrew Rogala
 	<div class="featuredwork__3">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
-			<img src="../../img/uploads/YBArt.png" />
+			<img src="../../img/uploads/YBArt.jpg" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://yankandbritart.net/">Check out this web site!</a>
@@ -67,7 +67,7 @@ author: Andrew Rogala
 	<div class="featuredwork__4">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
-			<img src="../../img/uploads/myhomepage.png" />
+			<img src="../../img/uploads/myhomepage.jpg" />
 			<div class="featuredwork__imgbox-overlay">
 				<div class="featuredwork__imgbox-overlay--text">
 					<a class="featuredwork__imgbox-overlay--link" href="https://myhomepage.surge.sh/">Check out this app!</a>

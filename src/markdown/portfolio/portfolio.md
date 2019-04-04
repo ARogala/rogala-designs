@@ -5,7 +5,7 @@ date: 2018-11-02
 author: Andrew Rogala
 ---
 <section class="featuredwork">
-	<div class="featuredwork__5">
+	<div class="featuredwork__8">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<!-- gatsby adds alt text and class names to img -->
 			<img src="../../img/uploads/favplaces.jpg" />
@@ -28,7 +28,7 @@ author: Andrew Rogala
         In the future I plan to make this a map share application where you can share your favorite places with friends and family.<br/>
         <a href="https://github.com/ARogala/FavoritePlacesMap">View Favorite Places on GitHub</a></p>
 	</div>
-	<div class="featuredwork__6">
+	<div class="featuredwork__9">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/listBuddy.jpg" />
 			<div class="featuredwork__imgbox-overlay">
@@ -42,7 +42,7 @@ author: Andrew Rogala
 		<p class="featuredwork__description-p">The classic list application but with some extra features. List data is saved with the browser’s local storage API and list templates have been added. I wrote this little app to learn the basics of Redux and to take a tour of the Material-UI component library. I must confess Redux took me a while to understand and implement but after getting the basics down I really like it. Redux helps make data flow in React apps much clearer! I learned a lot making this little app and hope you enjoy it. I use it for making grocery lists.<br/>
 	    <a href="https://github.com/ARogala/list-buddy-redux">View List Buddy on GitHub</a></p>
 	</div>
-	<div class="featuredwork__7">
+	<div class="featuredwork__10">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/frogger.jpg" />
 			<div class="featuredwork__imgbox-overlay">
@@ -58,7 +58,7 @@ author: Andrew Rogala
 		<p class="featuredwork__description-p">Use the arrow or wasd keys to move your player safely across the board and eat some brains!! Sorry NO mobile phone support for this game. The code and full list of game play rules are available on GitHub.<br/>
 	    <a href="https://github.com/ARogala/Frogger">View Frogger Clone on GitHub</a></p>
 	</div>
-	<div class="featuredwork__8">
+	<div class="featuredwork__11">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/memorygame.jpg" />
 			<div class="featuredwork__imgbox-overlay">
@@ -72,7 +72,7 @@ author: Andrew Rogala
 		<p class="featuredwork__description-p">The memory game was built for Udacity's Front End Nano-degree program. I made sure to go beyond the basic requirements and added a settings page to change the tile and color theme around. The game was fun to build and works well on both desktop and mobile devices. I play it from time to time and my nieces love it. Hope you enjoy it as well.<br/>
 	    <a href="https://github.com/ARogala/fend-project-memory-game">View Memory Game on GitHub</a></p>
 	</div>
-	<div class="featuredwork__9">
+	<div class="featuredwork__12">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/timer.jpg" />
 			<div class="featuredwork__imgbox-overlay">
@@ -86,7 +86,7 @@ author: Andrew Rogala
 		<p class="featuredwork__description-p">I wrote this timer to demonstrate knowledge of the JavaScript language. Specifically, this timer has been coded with the modular design pattern and makes use of DOM manipulation in vanilla JavaScript. The algorithm was interesting and fun to figure out. Unfortunately, on mobile when the phone goes to sleep the script stops thus causing the timer to lose its accuracy. I am looking into a fix for this.<br/>
 	    <a href="https://github.com/ARogala/Timer">View timer on GitHub</a></p>
 	</div>
-	<div class="featuredwork__10">
+	<div class="featuredwork__13">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/stopwatch.jpg" />
 			<div class="featuredwork__imgbox-overlay">
@@ -100,7 +100,7 @@ author: Andrew Rogala
 		<p class="featuredwork__description-p">I wrote this stop watch to demonstrate knowledge of the JavaScript language. This stop watch has been coded with the modular design pattern and makes use of DOM manipulation in vanilla JavaScript. I spent a fair about of time on this code and tried my best to make the code clean and well commented. I have integrated this code into both of my games and hope you can make use of it too. Similar to the timer the algorithm was challenging, interesting, and fun. I may rewrite both of these as React components.<br/>
 	    <a href="https://github.com/ARogala/StopWatch">View Stop Watch on GitHub</a></p>
 	</div>
-	<div class="featuredwork__11">
+	<div class="featuredwork__14">
 		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
 			<img src="../../img/uploads/customhomepage.jpg" />
 			<div class="featuredwork__imgbox-overlay">

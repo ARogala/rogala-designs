@@ -97,36 +97,7 @@ author: Andrew Rogala
 		<p class="featuredwork__description-p">Features include: three search bars, slide show, a custom clock with date, weather, and popular icon links. This is a redo of the first piece of code I posted on GitHub and I have learned a lot since then.<br/>
 		<a href="https://github.com/ARogala/custom-home-page">View code on GitHub</a></p>
 	</div>
-	<div class="featuredwork__6">
-		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
-			<!-- gatsby adds alt text and class names to img -->
-			<img src="../../img/uploads/beerme.jpg" />
-			<div class="featuredwork__imgbox-overlay">
-				<div class="featuredwork__imgbox-overlay--text">
-					<a class="featuredwork__imgbox-overlay--link" href="https://beerme.surge.sh">Check out this app!</a>
-				</div>
-			</div>
-		</div>
-		<p class="featuredwork__tip">Hover over the image and click link to visit the app</p>
-		<h3 class="heading-tertiary">Beer Me Drinking Game!</h3>
-		<p class="featuredwork__description-p">The Beer Me Drinking Game is a single page web app built with React, Redux, and the 
-		<a href="https://punkapi.com/documentation/v2">PUNK API.</a> It is not my most complicated application but it was good practice with React, creative, and a fun way to find some new beers.<br/><a href="https://github.com/ARogala/beer-me">View code on GitHub</a></p><br/>
-	</div>
-	<div class="featuredwork__7">
-		<div class="featuredwork__imgbox" data-aos="fade-left" data-aos-easing="ease-in-out-back" tabindex="0">
-			<!-- gatsby adds alt text and class names to img -->
-			<img src="../../img/uploads/tipcalc.jpg" />
-			<div class="featuredwork__imgbox-overlay">
-				<div class="featuredwork__imgbox-overlay--text">
-					<a class="featuredwork__imgbox-overlay--link" href="https://mytipcalc.surge.sh">Check out this app!</a>
-				</div>
-			</div>
-		</div>
-		<p class="featuredwork__tip">Hover over the image and click link to visit the app</p>
-		<h3 class="heading-tertiary">Tip Calculator</h3>
-		<p class="featuredwork__description-p">Tip Calculator is a single page web app built with React, and Redux. This calculator goes well beyond the basic beginner tip calculator. Tip calculator allows users to calculate the tip on the before (pre) or after (post) tax amount of bills. Users can also divide the bill up between friends evenly (see basic tab) or unevenly (see Advanced tab).</p><br/>
-		<p class="featuredwork__description-p"> This app ended up being a little more complicated to build than I initally thought and it was a great introduction into the surprisingly complicated world of currency calculation in JavaScript; or any programming language for that matter. I made use of the wonderful <a href="https://github.com/sarahdayan/dinero.js">Dinero.js</a> library for all currency calculations in this app.<br/><a href="https://github.com/ARogala/Tip-Calculator">View code on GitHub</a></p>
-	</div>
+	
 </section>
 
 

@@ -1,5 +1,5 @@
-[[redirects]]
-  from = "https://rogalawebdesigns.netlify.com/*"
-  to = "https://www.rogalawebdesigns.com/:splat"
-  status = 302
-  force = true
+#[[redirects]]
+#  from = "https://rogalawebdesigns.netlify.com/*"
+#  to = "https://www.rogalawebdesigns.com/:splat"
+#  status = 302
+#  force = true
